@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Table</title>
+    <style>
+        table {
+            border: 1px solid #000000;
+            max-width: 100%;
+            width: 800px;
+            margin: 0px auto;
+            background-color: #000000 ;
+            border-collapse: collapse;
+        }
+        td, th {
+            padding: 10px;
+            border-bottom: 1px solid #000000;
+            background-color: white;
+            border-left: 1px solid #000000;
+        }
+        th {
+            background-color: gray;
+        }
+
+        tr:nth-child(even) td {
+            background-color: aliceblue;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>HTML Table</h1>
+
+    <table >
+        <tr>
+            <th>Full Name</th>
+            <th>Email</th>
+            <th>Mobile</th>
+        </tr>
+        <tr>
+            <td>Alex Lee</td>
+            <td><a href="mailto:alex.lee@gmail.com">alex.lee@gmail.com</a></td>
+            <td><a href="tel:0420400112">0420400112</a></td>
+        </tr>
+        <tr>
+            <td>Steve Jobs</td>
+            <td><a href="mailto:steve.jobs@gmail.com">steve.jobs@gmail.com</a></td>
+            <td><a href="tel:0420400113">0420400113</a></td>
+        </tr>
+        <tr>
+            <td>Elon Musk</td>
+            <td><a href="mailto:elon.musk@gmail.com">elon.musk@gmail.com</a></td>
+            <td>-</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <table >
+        <tr>
+            <th colspan="6"><h3>How respondents rate veichle features</h3></th>
+            
+        </tr>
+        <tr>
+            <th>Base</th>
+            <td>Very good</td>
+            <td>Good</td>
+            <td>No opinion</td>
+            <td>Poor</td>
+            <td>Very Poor</td>
+        </tr>
+    </table>
+
+    <hr>
+
+
+    <table >
+        <thead>
+            <tr>
+                <th colspan="8">Features</th>
+            </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td rowspan="6"></td>
+            <td>Energy efficiency</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>Safety features</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            
+            <td>Style and design</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            
+            <td>Comfort</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>11</td>
+            <td>1</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            
+            <td>Ease of obtaining spare parts</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            
+            <td>Maintainance cost</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td>Total</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+        </tr>
+    </tfoot>
+    </table>
+
+</body>
+</html>
