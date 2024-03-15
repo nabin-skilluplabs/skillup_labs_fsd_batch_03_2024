@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Elements</title>
+</head>
+<body>
+    <h2>Form Elements</h2>
+
+    <form method="post" action="">
+
+        <div>
+            <label for="fistName">First Name:</label>
+            <input type="text" id="fistName" name="firstName">
+        </div>
+
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password">
+        </div>
+
+
+        <input type="button" value="Submit">
+        <input type="reset" value="Reset">
+        <button>Click Me</button>
+    
+        <button><img src="./assets/images/banner_1.png" alt=""></button>
+    
+    
+        <div>
+            <label for="bio">Bio</label>
+            <textarea id="bio" name="bio"></textarea>
+        </div>
+
+
+        <div>
+            <label>Selected days:</label> <br >
+            <label for="day1"><input type="checkbox" id="day1" name="selected_days" value="Monday"> Monday</label> <br >
+            <label for="day2"><input type="checkbox" id="day2" name="selected_days" value="Tuesday"> Tuesday</label> <br >
+            <label for="day3"><input type="checkbox" id="day3" name="selected_days" value="Wednesday"> Wednesday</label> <br >
+            <label for="day4"><input type="checkbox" id="day4" name="selected_days" value="Thursday"> Thursday</label> <br >
+            <label for="day4"><input type="checkbox" id="day5" name="selected_days" value="Friday"> Friday </label>
+        </div>
+
+        <div>
+            <label>Gender</label> <br >
+            <label for="male"><input type="radio" id="male" name="gender" value="M"> Male </label><br >
+            <label for="female"><input type="radio" id="female" name="gender" value="F"> Female </label><br >
+            <label for="other"><input type="radio" id="other" name="gender" value="O"> Other </label><br >
+        </div>
+
+        <div>
+            <label>Education</label>
+            <select multiple id="education" name="education">
+                <option value="Doctorate">Doctorate</option>
+                <option value="Masters">Masters</option>
+                <option value="Bachelors">Bachelors</option>
+                <option value="High School">High School</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="resume">Resume</label>
+            <input type="file" id="resume" name="resume" accept="application/pdf" multiple>
+        </div>
+
+        <div>
+            <label>Date of Birth</label>
+            <input type="date" id="dob" name="dob" >
+        </div>
+
+        <div>
+            <input type="month">
+        </div>
+
+    </form>
+
+</body>
+</html>
