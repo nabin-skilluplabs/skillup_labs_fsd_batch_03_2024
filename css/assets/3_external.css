@@ -1,0 +1,22 @@
+h1{
+    font-size: 50px;
+    color: green;
+}
+h2{
+    font-size: 30px;
+    color: red;
+}
+#main{
+    text-transform: uppercase;
+}
+.intro_text{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+}
+img{
+    border-radius: 50%;
+}
+.pic{
+    border-radius: 20%;
+    background-color: red;
+}
