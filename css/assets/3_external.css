@@ -1,0 +1,28 @@
+<style>
+        h1 {
+            font-size: 50px;
+            color: blueviolet;
+        }
+        h2 {
+            font-size: 30px;
+            color: pink;
+        }
+        #main-heading {
+            text-transform: uppercase;
+        
+        }
+        .intro_text {
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 20px;
+        }
+        img {
+            border-radius: 50%;
+        }
+        .side-image {
+            border-radius: 20%;
+
+        }
+        .img_with_bg{
+            background-color: blue;
+        }
+    </style>
