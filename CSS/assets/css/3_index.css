@@ -1,0 +1,29 @@
+<style>
+h1{
+    font-size: 50px;
+    color: green;
+}
+h2{
+    font: size 30px;;
+    color: red;
+}
+#main-heading{
+    text-transform: uppercase;
+
+}
+.intro_text{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 18px;
+}
+img{ 
+border-radius:50%;
+
+}
+.img2{
+    border-radius: 20%;
+    background-color: black;
+}
+.background-color_img{
+    background-color: black;
+}
+</style>
