@@ -1,0 +1,28 @@
+        h1{
+            font-size: 50px;
+            color: green;
+            text-align: center;
+        }
+        h2{
+            font-size: 30px;
+            color: red;
+        }
+        #main_heading{
+            text-transform: uppercase;
+        }
+
+        .intro_text{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        img{
+            border-radius: 50%;
+        }
+
+
+        .pic{
+            border-radius: 20%;
+        }
+        
+        .img_without_bg{
+            background-color: red;
+        }
