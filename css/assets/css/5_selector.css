@@ -1,0 +1,80 @@
+/* 
+aurthor:Yam Khadka
+contact:0426733324
+copyright 
+ */
+ @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+h1{
+    font-size: 100px;
+    color: brown;
+    text-align: center; 
+   font
+}
+h2{
+    font-size: 50px;
+    color: blue;
+}
+#special-heading{
+    color: aqua;
+    text-decoration: underline;
+}
+.danger-text{
+    color: black;
+    font-style:italic;
+}
+input[type="text"]{
+    border: 1px solid red;
+}
+input[placeholder="Enter your email address.."]{
+    border: 5px solid greenyellow;
+}
+input[value="reset"]
+{
+    background-color: yellow;
+}
+input[value="submit"]{
+    background-color: green;
+}
+input[type="button"]{
+    font-size: 25px;
+}
+input{
+    padding: 5px;
+}
+h1, h2, h3, h4, h5, h6, input, button, .danger-text {
+    text-transform: uppercase;
+}
+input[type="button"]:hover, button:hover {
+background-color: red;
+font-weight: bold;
+}
+input[type="text"]:focus {
+    border: 5px solid red;
+    outline: none;
+}
+.no-class{
+    color: blanchedalmond !important;
+}
+.submit-botton{
+    color: blue;
+    font-size: 25px;
+}
+.main-container{
+    width: 75%;
+    margin: 0px auto;
+    box-shadow: 0px 0px 5 px rgba(0, 0, 0, 0.1) ;
+    padding: 30px;
+    box-sizing: border-box;
+}
+input[type="search"]{
+    font-size: 30px;
+    padding: 15px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.1);
+    border: none;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+}
