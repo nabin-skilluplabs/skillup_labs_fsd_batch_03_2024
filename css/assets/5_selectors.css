@@ -1,11 +1,15 @@
+*
+
+
 h1{
     font-size: 50px;
     color:brown
 }
+
 h2 {
     font-size: 100px;
     color:rgb(220, 205, 205)
-
+   
 }
 h3 {
     font-size: 30px;
@@ -22,12 +26,16 @@ h3 {
 }
 input[type="text"]{
     border: 1px solid rgb(38, 15, 188);
+    display:block;
+
 }
 input[value="submit"] {
     background-color: green;
+    color:aquamarine
 }
 input[value="reset"] {
     background-color: yellow;
+    color:aquamarine
 }
 input[type="button"]{
     font-size: 20px;
@@ -48,6 +56,16 @@ input[type="button"]:hover, button:hover {
 input[type="text"]:focus  {
     border: 5px solid red;
     outline: none;
+}
+.no_color {
+    color: skyblue !important;
+}
+input[type="search"] {
+    border-radius: 30px;
+    font-size 20px;
+    padding:15px;
+    position: absolute;
+
 }
     
     
