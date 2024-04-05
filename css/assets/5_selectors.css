@@ -18,8 +18,11 @@ input[type="text" ]{
     border: 1px solid red;
 }
 input[ value="submit" ] {
-    background-color:green;
+    background-color:rgb(145, 189, 145);
 }
 input[ value="reset" ] {
-    background-color:yellow;
+    background-color:rgb(161, 161, 115);
+}
+input[type="button"]{
+    font-size: 25px;
 }
