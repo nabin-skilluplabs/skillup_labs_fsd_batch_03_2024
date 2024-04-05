@@ -1,3 +1,8 @@
+/* Author:Bhuwan Khatri
+Email: khatribhuwan055@gmail.com
+Copyright:Skillup Labs
+Last updated:5th April 2024
+ */
 h1{
     font-size: 100px;
     color: brown;
@@ -25,4 +30,7 @@ input[ value="reset" ] {
 }
 input[type="button"]{
     font-size: 25px;
+}
+input{
+    padding: 15px;
 }
