@@ -25,3 +25,15 @@ h3 {
 input[type="text"] {
     border: 1px solid red;
 }
+
+input[value="Submit"] {
+    background-color: green;
+}
+
+input[value="Reset"] {
+    background-color: yellow;
+}
+
+input[type="button"] {
+    font-size: 25px;
+}
