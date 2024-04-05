@@ -2,7 +2,7 @@ h1{
     font-size: 50px;
     color:brown
 }
-h2{
+h2 {
     font-size: 100px;
     color:rgb(220, 205, 205)
 
@@ -32,8 +32,22 @@ input[value="reset"] {
 input[type="button"]{
     font-size: 20px;
 }
-input{
+input[type="button"]{
     padding: 15px;
+}
+input[placeholder="Name"]{
+    border:2px solid blueviolet;
+}
+h1, h2, h3, h4, input, button {
+    text-transform: uppercase;
+}
+input[type="button"]:hover, button:hover {
+    background-color: red;
+    font-weight: bolder;
+}
+input[type="text"]:focus  {
+    border: 5px solid red;
+    outline: none;
 }
     
     
