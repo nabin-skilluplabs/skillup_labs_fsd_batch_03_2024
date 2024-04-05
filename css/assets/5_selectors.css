@@ -1,0 +1,38 @@
+h1{
+    font-size: 50px;
+    color:brown
+}
+h2{
+    font-size: 100px;
+    color:rgb(220, 205, 205)
+
+}
+h3 {
+    font-size: 30px;
+}
+#special_heading {
+    color:aquamarine;
+}
+.danger_text {
+    color: red;
+ font-style: italic;
+
+
+}
+input[type="text"]{
+    border: 1px solid rgb(38, 15, 188);
+}
+input[value="submit"] {
+    background-color: green;
+}
+input[value="reset"] {
+    background-color: yellow;
+}
+input[type="button"]{
+    font-size: 20px;
+}
+input{
+    padding: 15px;
+}
+    
+    
