@@ -5,7 +5,11 @@ Copyright:Skillup Labs
 Last visted:
 
 */
-
+*{
+    background-color: antiquewhite ;
+    margin: 0; padding: 0;
+    color: aqua;
+}
 
 h1{font-size: 100px;
     color: brown;
@@ -39,5 +43,18 @@ input[type="button"]{
 input{
     padding: 15px;
 }
+input[placeholder="Enter your email.."]{
+border: 2px solid green;
+}
+h1,h2,h3,h4,h5,input,button{
+    text-transform: uppercase;
+}
+input[ type="button"]:hover,button:hover{ background-color: red;
+    font-weight: bold;
 
+}
+input[type=text]:focus{
+    border: 5px solid red;
+    outline: none;
 
+}
