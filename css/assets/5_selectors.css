@@ -12,6 +12,7 @@ h3 {
 }
 #special_heading {
     color:aquamarine;
+    text-decoration: underline;
 }
 .danger_text {
     color: red;
