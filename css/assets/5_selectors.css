@@ -3,6 +3,10 @@ Email: khatribhuwan055@gmail.com
 Copyright:Skillup Labs
 Last updated:5th April 2024
  */
+ *{
+    margin: 0;
+    padding: 0;
+ }
 h1{
     font-size: 100px;
     color: brown;
@@ -15,7 +19,7 @@ h2{
     color: aqua;
     text-decoration: underline;
 }
-.danger_text{
+h3.danger_text{
     color: red;
     font-style: italic;
 }
@@ -31,6 +35,16 @@ input[ value="reset" ] {
 input[type="button"]{
     font-size: 25px;
 }
-input{
-    padding: 15px;
+input.submit_button{
+    color: aqua;
+}
+input[placeholder="Enter your email"]{
+    border: 2px solid greenyellow;
+}
+h1, h2, h3, h4, h5, h6, input {
+    text-transform: uppercase;
+}
+input[type="button"]:hover, button:hover{
+    background-color: red;
+    font-weight: bold;
 }
