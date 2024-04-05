@@ -1,3 +1,13 @@
+/*
+Author:Sandhya Aryal
+Email:sandhyaaryal777@gmail.com
+Copyright: Skillup Labs
+Last updated: 5th April 2024
+*/
+* {
+    margin:0;
+    Padding:0;
+}
 h1{
     font-size:100px;
     color:brown
@@ -31,4 +41,12 @@ input[type="button"] {
 }
 input{
     padding: 15px;
+}
+h1,h2,h3,h4,h5,h6{
+    text-transform:uppercase;
+}
+input [type="button"]:hover,
+button:hover {
+    background-color: red;
+    font-weight: bold;
 }
