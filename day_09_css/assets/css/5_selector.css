@@ -1,52 +1,75 @@
-
 /* this is the comment option
 Author: Suraj Neupane
 Email:Surajneupane02@gmail.com
 Copyright: SuraJNCodeHuB
 last visited: 5th April 2024
 */
-
-h1{
-    font-size: 100px;
-    color: brown
-
+* {
+    margin: 0;
+    padding: 0;
 }
 
-h2{
+h1 {
+    font-size: 100px;
+    color: brown;
+}
+
+h2 {
     font-size: 50px;
     color: blue;
-
 }
-h3{
+
+h3 {
     font-size: 30px;
 }
 
-#special_heading{
+#special_heading {
     color: aqua;
     text-decoration: underline;
 }
 
-.danger_text{
+.danger_text {
     color: red;
     font-style: italic;
 }
 
-input[type="text"]{
-    border: 1px solid red
+input[type="text"] {
+    border: 1px solid red;
 }
 
 input[value="submit"] {
-    background-color:rgb(10, 219, 10);
-}
-input[value="reset"] {
-    background-color:rgb(252, 252, 15);
+    background-color: rgb(10, 219, 10);
 }
 
+input[value="reset"] {
+    background-color: rgb(252, 252, 15);
+}
 
 input[type="button"] {
     font-size: 25px;
 }
 
-input[type="button"] {
+input.submit_btn[type="button"] {
     padding: 15px;
+}
+
+input[placeholder="Enter your email address..."] {
+    border: 2px solid greenyellow;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+button {
+    text-transform: uppercase;
+}
+
+input[type="button"]:hover,
+button:hover {
+    background-color: red;
+    font-weight: bold;
 }
