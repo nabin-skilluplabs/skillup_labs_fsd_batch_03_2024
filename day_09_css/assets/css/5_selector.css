@@ -73,3 +73,13 @@ button:hover {
     background-color: red;
     font-weight: bold;
 }
+
+input[type="text"]:focus {
+    border: 2px solid red;
+    outline: none;
+}
+
+.no_color {
+    color:black !important;
+}
+
