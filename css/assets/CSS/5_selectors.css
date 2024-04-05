@@ -15,7 +15,7 @@ h3{
 }
 .danger_text {
     color: red;
-    font-size: italic;
+    font-style: italic;
 }
 input [type="text"] {
     border: 1px solid red;
@@ -23,10 +23,12 @@ input [type="text"] {
 input[value="Submit"] {
     background-color: green;
 }
-input [value="Reset"] {
+input[value="Reset"] {
     background-color:yellow;
 }
 input[type="button"] {
     font-size:25px;
 }
-input[]
+input{
+    padding: 15px;
+}
