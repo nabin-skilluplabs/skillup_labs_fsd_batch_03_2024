@@ -1,10 +1,14 @@
-
 /* 
 Author: Nabin Singh
 Email: nabin.singh@skilluplabs.com.au
 Copyright: Skillup Labs
 Last updated: 5th April 2024
 */
+* {
+    margin: 0;
+    padding: 0;
+}
+
 h1 {
     font-size: 100px;
     color: brown;
@@ -19,12 +23,12 @@ h3 {
     font-size: 30px;
 }
 
-#special_heading {
+h3#special_heading {
     color: aqua;
     text-decoration: underline;
 }
 
-.danger_text {
+h3.danger_text {
     color: red;
     font-style: italic;
 }
@@ -43,4 +47,29 @@ input[value="Reset"] {
 
 input[type="button"] {
     font-size: 25px;
+}
+
+input.submit_btn {
+    color: aqua;
+}
+
+input[placeholder="Enter your email address"] {
+    border: 2px solid greenyellow;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+button {
+    text-transform: uppercase;
+}
+
+input[type="button"]:hover,
+button:hover {
+    background-color: red;
+    font-weight: bold;
 }
