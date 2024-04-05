@@ -19,6 +19,10 @@ h2{
     color: aqua;
     text-decoration: underline;
 }
+h3{
+    color: aqua;
+    font-size: 30px;
+}
 h3.danger_text{
     color: red;
     font-style: italic;
@@ -47,4 +51,23 @@ h1, h2, h3, h4, h5, h6, input {
 input[type="button"]:hover, button:hover{
     background-color: red;
     font-weight: bold;
+    
+}
+input[type="button"]:focus, button:focus{
+    border: 5px solid red;
+    
+}
+input[type="text"]:focus{
+    border: 5px solid red;
+    outline: none;
+}
+.no_color{
+    color: black !important;
+}
+inpot[type+"search"]{
+    font-size: 30px;
+    padding: 15px;
+    right: 15px;
+    top: 15px;
+
 }
