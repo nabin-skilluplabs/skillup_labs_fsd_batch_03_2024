@@ -1,18 +1,4 @@
-Inline:
 
-style= "background-color: gray;">
-    <h1 style="font-size: 50px; color: green; text-align: center;">Inline CSS</h1>
-    <p> Inline CSS  in written wirthin html tags</p>
-    <ul style="background-color: coral;">
-        <li style="color: beige;">Monday</li>
-        <li style="color: aquamarine;">Tuesday</li>
-        <li style="color: azure;">Wednesday</li>
-    </ul>
-
-
-
-Internal
-<style>
 h1 {
     font-size: 50px;
     color: green;
@@ -38,10 +24,5 @@ img {
     border-radius: 20%;
 }
 .img_with_bg{
-    background-color: aqua;
+    background-color: aqua
 }
-
-</style>
-
-
-External::after
