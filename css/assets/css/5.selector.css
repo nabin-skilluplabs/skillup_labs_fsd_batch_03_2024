@@ -4,6 +4,10 @@ contact:0426733324
 copyright 
 
  */
+ *{
+    margin: 0;
+    padding: 0;
+ }
 h1{
     font-size: 100px;
     color: brown;
@@ -24,6 +28,9 @@ h2{
 input[type="text"]{
     border: 1px solid red;
 }
+input[placeholder="Enter your email address.."]{
+    border: 15px solid greenyellow;
+}
 input[value="reset"]
 {
     background-color: yellow;
@@ -36,4 +43,11 @@ input[type="button"]{
 }
 input{
     padding: 5px;
+}
+h1, h2, h3, h4, h5, h6, input, button, .danger-text {
+    text-transform: uppercase;
+}
+input[type="button"] :hover, button:hover {
+background-color: red;
+font-weight: bold;
 }
