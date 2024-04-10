@@ -77,3 +77,31 @@ input[type="search"]{
     top: 10px;
     right: 15px;
 }
+button:disabled{
+    background-color: grey;
+    opacity: 0.5;
+    color: red;
+}
+.fancy-text::before{
+content: "Anything";
+border: 0.5px solid red;
+height: 16px;
+width: 16px;
+border-radius: 100%;
+}
+.fancy-text::after{
+    content: "Anything";
+    border: 1px solid red;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;   
+}
+.fancy-text::first-letter{
+ font-size: 100px;
+ color: blue;
+ font-weight: bold;
+}
+.file_picker::file-selector-button{
+    font-size: 50px;
+    background-color: blueviolet;
+}
