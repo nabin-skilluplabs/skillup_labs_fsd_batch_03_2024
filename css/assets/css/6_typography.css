@@ -15,6 +15,7 @@ h2 span:nth-child(1){
     font-size: 1em;
     text-align: center;
     font-style: italic;
+    text-transform: uppercase;
 }
 h2 span:nth-child(2){
     color:navy;
@@ -33,10 +34,16 @@ h2 span:nth-child(4){
     font-family:mija;
     font-size: 5vw;
     font-style: italic; 
-    letter-spacing: 10px;}
+    letter-spacing: 10px;
+}
+
 p{
     font-size: 18px;
-    line-height: 0.5;
+    line-height: 1.6;
     text-decoration: underline;
     text-align: center;
+}
+.email{
+    text-transform: capitalize;
+    font-size: 30px;
 }
