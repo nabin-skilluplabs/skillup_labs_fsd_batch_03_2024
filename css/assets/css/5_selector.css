@@ -78,3 +78,26 @@ input[type="search"]{
     top: 10px;
     right: 15px;
 }
+button:disabled{
+    background-color: grey;
+    opacity: 0.5;
+    color: red;
+}
+.fancy-text::before{
+content: "Anything";
+border: 1px solid red;
+height: 16px;
+width: 16px;
+border-radius: 50%;
+}
+.fancy-text::after{
+    content: "Anything";
+    border: 1px solid red;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;   
+}
+.fancy-text::first-letter{
+ font-size: 50px;
+ color: blue;
+}
