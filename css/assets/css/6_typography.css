@@ -17,3 +17,7 @@ h2 span:nth-child(2){
     font-family: mija;
     font-size: 100px;
 }
+h2 span:nth-child(3){
+    color:lightseagreen;
+    font-family: mija;
+    font-size: 100px;}
