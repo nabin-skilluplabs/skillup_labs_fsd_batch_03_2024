@@ -1,39 +1,66 @@
-h1{
+h1 {
     font-size: 100px;
     color: brown;
 }
+
 /* Author: Akash Yadav
 Email: yadavakash2060@gmail.com
 Copyright:Skillup Labs
 Last Updated: 5th April 2024 */
 
-h2{
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
     font-size: 50px;
     color: blue;
 }
-#special_heading{
+
+h3 {
+    font-size: 30px;
+}
+
+#special_heading {
     color: aqua;
     text-decoration: underline;
 }
 
-.danger_text{
+.danger_text {
     color: red;
     font-style: italic;
 
 }
-input[type="text"]{
+
+input[type="text"] {
     border: 1px solid red;
 }
 
-input[value="submit"]{
+input[value="submit"] {
     background-color: green;
 }
-input[value="Reset"]{
+
+input[value="Reset"] {
     background-color: yellow;
 }
-input[type="button"]{
+
+input[type="button"] {
     font-size: 25px;
 }
-input{
+
+input {
     padding: 15px;
+}
+
+input[type="button"]:hover,
+button:hover {
+    background-color: red;
+    font-weight: bold;
+
+}
+input[type="text"]:focus {
+border: 5px solid red;
+outline: none;
+box-shadow: 10px lightcyan;
 }
