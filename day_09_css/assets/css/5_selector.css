@@ -84,3 +84,34 @@ input[type="search"] {
     top: 15px;
     right: 15px;
 }
+
+.button:disabled{
+    background-color: gray;
+    opacity: 0.5;
+    color: white;
+
+}
+
+.fancy_text::after{
+    content: " ";
+    display: inline-block;
+    border: 1px solid red;
+    width: 16px; 
+    height: 16px;
+    border-radius: 50%;
+
+}
+
+
+.fancy_text::first-letter{
+    font-size: 40px;
+    font-weight: 60px;
+    color: blueviolet;
+    
+}
+
+.file_picker::file-selector-button{
+    font-size: 15px;
+    background-color: purple;
+    color: white;
+}
