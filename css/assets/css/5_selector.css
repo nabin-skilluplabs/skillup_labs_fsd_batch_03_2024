@@ -84,8 +84,6 @@ input[type="text"]:focus {
 }
 
 
-
-
 .fancy_text::first-letter {
     font-size: 50px;
     font-weight:bold;
