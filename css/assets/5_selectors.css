@@ -62,10 +62,43 @@ input[type="text"]:focus  {
 }
 input[type="search"] {
     border-radius: 30px;
-    font-size 20px;
-    padding:15px;
+    font-size 16px;
+    padding: 15px;
     position: absolute;
 
+}
+button:disabled {
+    background-color: pink;
+    opacity: 0.8;
+}
+
+.fancy_text::before {
+    content: "=";
+    border: 1px solid red;
+    display: inline-block;
+    width: 16px;
+    heigth: 16px;
+border-radius: 50%;
+
+
+}
+.fancy_text::after {
+    content: "0";
+    border: 1px solid red;
+    display: inline-block;
+    width: 16px;
+    heigth: 16px;
+border-radius: 50%;
+}
+
+
+.fancy_text::first-letter {
+    color: aqua;
+    font-size: 40px;
+    font-weight: bold;
+}
+.file_picker::file-selector-buttom {
+    font-size: 30px;
 }
     
     
