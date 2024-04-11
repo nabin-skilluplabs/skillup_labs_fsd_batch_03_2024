@@ -65,6 +65,8 @@ input[type="search"] {
     font-size: 16px;
     padding: 15px;
     position: centre;
+    color: greenyellow;
+    background-color: silver;
 
 
 }
@@ -73,15 +75,7 @@ button:disabled {
     opacity: 0.8;
 }
 
-.fancy_text::before {
-    content: "=";
-    border: 1px solid red;
-    display: inline-block;
-    width: 16px; 
-    border-radius: 50%;
 
-
-}
 .fancy_text::after {
     content: "0";
     border: 1px solid red;
@@ -96,8 +90,8 @@ button:disabled {
     font-size: 40px;
     font-weight: bold;
 }
-.file_picker::file-selector-buttom {
-    font-size: 30px;
+.file_picker::file-selector-button {
+    font-size: 50px;
     
 
 }
