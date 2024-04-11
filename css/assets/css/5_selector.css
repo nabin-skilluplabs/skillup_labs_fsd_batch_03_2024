@@ -102,6 +102,7 @@ border-radius: 100%;
  color: blue;
  font-weight: bold;
 }
-.file_picker::file-selector-button{
-    file font: 50px;
+.file-picker::file-selector-button:{
+ font-size: 50px;
+ background-color: yellow;
 }
