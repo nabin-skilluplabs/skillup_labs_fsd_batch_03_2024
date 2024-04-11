@@ -9,7 +9,7 @@ h1{
     font-style: italic;
     letter-spacing:5vw;
     word-spacing: 5vw;
-    text-shadow: 10px, 10px, 10px ;
+    text-shadow: 5px 4px 15px rgba(241, 181, 17, 0.958);
 }
 h1 span:nth-child(1) {
     color: red;
@@ -27,4 +27,6 @@ p{
     line-height: 1.6em;
     text-decoration: underline;
     text-align: center;
+    text-shadow: 5px 4px 15px rgba(241, 181, 17, 0.958);
 }
+
