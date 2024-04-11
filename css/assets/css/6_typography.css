@@ -12,4 +12,8 @@ h2 span:nth-child(1){
     font-family: mija;
     font-size: 100px;
 }
-h2
+h2 span:nth-child(2){
+    color:navy;
+    font-family: mija;
+    font-size: 100px;
+}
