@@ -4,6 +4,7 @@ Email:Surajneupane02@gmail.com
 Copyright: SuraJNCodeHuB
 last visited: 5th April 2024
 */
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Rubik+Scribble&display=swap')
 * {
     margin: 0;
     padding: 0;
@@ -57,16 +58,6 @@ input[placeholder="Enter your email address..."] {
     border: 2px solid greenyellow;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-input,
-button {
-    text-transform: uppercase;
-}
 
 input[type="button"]:hover,
 button:hover {
@@ -83,3 +74,13 @@ input[type="text"]:focus {
     color:black !important;
 }
 
+input[type="search"] {
+    font-size: 30px;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px; rgba(0,0,0,0,2);
+    border: none;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
