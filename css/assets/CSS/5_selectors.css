@@ -42,11 +42,28 @@ input[type="button"] {
 input{
     padding: 15px;
 }
-h1,h2,h3,h4,h5,h6{
+h1,h2,h3,h4,h5,h6,input,button{
     text-transform:uppercase;
 }
-input [type="button"]:hover,
+input[type="search"]:hover,
+input[type="text"]:hover,
+input[type="button"]:hover,
 button:hover {
     background-color: red;
     font-weight: bold;
+}
+input[type="text"]:focus {
+    border:5px solid red;
+    outline: none;
+}
+.no_color {
+    color: pink !important
+}
+input[type="search"] {
+    font-size: 30px;
+    padding: 15px;
+    boarder-
+    box-shadow:
+    position:display: 
+    top:15px;
 }
