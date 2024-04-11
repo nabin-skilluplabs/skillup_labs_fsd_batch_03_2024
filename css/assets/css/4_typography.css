@@ -2,6 +2,7 @@
 h1{
     font-size: 100px;
     font-weight: normal;
+    text-shadow: 10px 14px 10px black;
 
 }
 h1 span:nth-child(1){  
@@ -12,4 +13,10 @@ h1 span:nth-child(2){
     font-family: 'Times New Roman', Times, serif;
     color: green;
     font-weight: bold;
+}
+p{
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: justify;
+    text-shadow: 4px 4px 8px blue;
 }
