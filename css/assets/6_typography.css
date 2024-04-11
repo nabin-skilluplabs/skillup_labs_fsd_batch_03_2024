@@ -1,0 +1,30 @@
+@font-face{
+    font-family: mija;
+    src: url('./fonts/Mija_Bold-webfont-subset-v2.woff2');
+}
+h1{
+    font-size: 100px;
+    font-weight: normal;
+    font-family: Mija;
+    font-style: italic;
+    letter-spacing:5vw;
+    word-spacing: 5vw;
+    text-shadow: 10px, 10px, 10px ;
+}
+h1 span:nth-child(1) {
+    color: red;
+    font-family: cursive;
+    font-style: italic
+}
+h1 span:nth-child(2){
+    color: green;
+    font-family: new 'Times New Roman', Times, serif;
+    font-weight: bold;
+    
+}
+p{
+    font-size: 18px;
+    line-height: 1.6em;
+    text-decoration: underline;
+    text-align: center;
+}
