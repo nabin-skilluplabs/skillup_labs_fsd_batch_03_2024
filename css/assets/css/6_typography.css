@@ -1,17 +1,24 @@
+@font-face {
+    font-family: mija;
+    src: url(/css/assets/font/Mija_Bold-webfont-subset-v2.woff2);
+}
+
+
+
 h1{
     font-size: 100px;
-    font-family: Mija, Arial, sans-serif;
+    font-family: mija, Arial, sans-serif;
     font-weight: normal;
     
 }
 
 h1 span:nth-child(1){
     color: red;
-    font-family: cursive;
+    font-family: mija;
 }
 h1 span:nth-child(2){
     color: green;
-    font-family: cursive;
+    font-family: mija;
 }
 
 
