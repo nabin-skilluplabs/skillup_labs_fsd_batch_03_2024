@@ -1,0 +1,13 @@
+.box {
+    width: 50%;
+    height: 600px;
+    border: 5px solid springgreen;
+    padding: 20px 30px 15px 10px;
+    box-sizing: border-box;
+    float: left;
+}
+.parent {
+    width: 70%;
+    margin: auto;
+    
+}

@@ -64,7 +64,7 @@ input[type="search"] {
     border-radius: 30px;
     font-size: 16px;
     padding: 15px;
-    position: centre;
+    position: sticky;
     color: greenyellow;
     background-color: silver;
 
