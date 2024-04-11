@@ -4,7 +4,9 @@ Email: adhikarisharad234@gmail.com
 Copyright: Sarad
 Last Updated: 5th April 24
  */
-
+* {
+    margin: 0; padding: 0;
+}
 h1 {
     font-size: 100px;
     color: brown;
@@ -48,4 +50,47 @@ input[type="button"] {
 
 input {
 padding:15px;
+}
+
+input.submit_btn {
+    color: aqua;
+}
+
+input[placeholder="Enter your enail address..."] {
+    border: 2px solid greenyellow; 
+}
+
+h1, h2, h3, h4, h5, h6, input, button {
+    text-transform: uppercase;
+}
+
+input[type="button"]:hover, button:hover {
+    background-color: red;
+    font-weight: bold;
+}
+
+input[type="text"]:focus {
+    border: 5px solid red;
+    outline: none;
+}
+
+.fancy_text::after {
+    content:" ";
+    display: inline-block;
+    border: 1px solid red;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+}
+
+
+
+
+.fancy_text::first-letter {
+    font-size: 50px;
+    font-weight:bold;
+}
+
+.file_picker::file-selector-button {
+    font-size: 30px;
 }
