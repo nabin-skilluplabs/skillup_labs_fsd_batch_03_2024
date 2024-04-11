@@ -1,0 +1,40 @@
+header{
+    text-decoration:solid;
+    width: auto;
+    margin: 5%;
+    
+}
+.developer{
+    color: rgb(202, 178, 19);
+
+}
+.path{
+    text-align: center;
+}
+.bg{
+    background-color:rgb(202, 178, 19) ;
+    border-radius: 15%;
+}
+.bg:hover{
+    background-color: rgb(98, 136, 170);
+}
+.nbg{
+    background-color: black;
+    color: rgb(202, 178, 19);
+    outline: none;
+    text-align: left;
+}
+.table{
+    background-color: rgb(227, 233, 238);
+    width: 200px;
+    text-align: center;
+}
+li{
+    width: 33%;
+    display: inline;
+}
+ol{
+    display: flex;
+    list-style: none;
+    width: 50;
+    }
