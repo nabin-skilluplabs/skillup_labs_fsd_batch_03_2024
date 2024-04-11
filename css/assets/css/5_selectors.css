@@ -133,7 +133,9 @@ button:disabled {
     font-weight: bold;
 }
 
-.file_picker::file_selector_button {
+.file_picker::file-selector-button
+{
     font-size: 30px;
+    border-radius: 25%;
 
 }
