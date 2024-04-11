@@ -62,9 +62,10 @@ input[type="text"]:focus  {
 }
 input[type="search"] {
     border-radius: 30px;
-    font-size 16px;
+    font-size: 16px;
     padding: 15px;
-    position: absolute;
+    position: centre;
+
 
 }
 button:disabled {
@@ -76,9 +77,8 @@ button:disabled {
     content: "=";
     border: 1px solid red;
     display: inline-block;
-    width: 16px;
-    heigth: 16px;
-border-radius: 50%;
+    width: 16px; 
+    border-radius: 50%;
 
 
 }
@@ -87,8 +87,7 @@ border-radius: 50%;
     border: 1px solid red;
     display: inline-block;
     width: 16px;
-    heigth: 16px;
-border-radius: 50%;
+    border-radius: 50%;
 }
 
 
@@ -99,6 +98,8 @@ border-radius: 50%;
 }
 .file_picker::file-selector-buttom {
     font-size: 30px;
+    
+
 }
     
     
