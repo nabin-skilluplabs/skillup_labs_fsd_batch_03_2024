@@ -1,0 +1,15 @@
+
+h1{
+    font-size: 100px;
+    font-weight: normal;
+
+}
+h1 span:nth-child(1){  
+    font-family: cursive;
+    color: red;
+}
+h1 span:nth-child(2){
+    font-family: 'Times New Roman', Times, serif;
+    color: green;
+    font-weight: bold;
+}
