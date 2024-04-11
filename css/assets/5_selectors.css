@@ -71,10 +71,19 @@ inpot[type+"search"]{
     top: 15px;
 
 }
-.fancy_text{
+.fancy_text::before{
     content: "";
     border: 1px solid red;
     width: 15px;
     height: 15px;
-    border-radius: 50%;
+    border-radius: 5%;
+}
+.fancy_text::first-letter{
+    font-size: 40px;
+    font-weight: bold;
+    color: red;
+}
+.file_picker::file-selector-button{
+   font-size: 30px;
+   border-radius: 15%;
 }
