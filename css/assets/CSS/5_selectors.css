@@ -62,8 +62,7 @@ input[type="text"]:focus {
 input[type="search"] {
     font-size: 30px;
     padding: 15px;
-    border: none
-    box-shadow:
+    border: none;
     position:display;
     top: 15px;
     right: 15px;
@@ -73,7 +72,7 @@ input[type="search"] {
     display:inline-block;
     border: 1px solid red;
     width: auto;
-
+}
 
 .fancy_text::after {
     content:"+";
@@ -82,20 +81,12 @@ input[type="search"] {
     width:16px;
     height: 16px;
     border-radius: 30%;
-
-.fancy_text::
-
-
 }
-.file_picker::file-selector-button {
+
+.file-picker::file-selector-button {
     font-size:30px;
-    background-color: 30px;
+    background-color: green;
 
 }
 
     
-
-
-
-    
-}
