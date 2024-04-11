@@ -112,3 +112,23 @@ input[type="search"] {
     top: 15px; 
     right: 15px;
 }
+
+button:disabled {
+    background-color: ghostwhite;
+    opacity: 0.1;
+    color: gray;
+}
+
+.fancy_text::after {
+    content: " ";
+    display: inline-block;
+    border: 1px solid red;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+}
+
+.fancy_text::first-letter {
+    font-size: 40px;
+    font-weight: bold;
+}
