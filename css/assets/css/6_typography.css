@@ -1,0 +1,15 @@
+@font-face {
+    font-family: mija;
+    src: url(./font/Mija_Bold-webfont-subset-v2.woff2);
+}
+h1{
+    font-size: 100px;
+    font-weight: normal;
+    font-family:mija;
+}
+h2 span:nth-child(1){
+    color: green;
+    font-family: mija;
+    font-size: 100px;
+}
+h2

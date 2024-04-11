@@ -10,7 +10,6 @@ h1{
     font-size: 100px;
     color: brown;
     text-align: center; 
-   font
 }
 h2{
     font-size: 50px;
@@ -102,7 +101,7 @@ border-radius: 100%;
  color: blue;
  font-weight: bold;
 }
-.file_picker::file-picker-button{
-    font-size: 30px;
+.file_picker::file-selector-button{
+    font-size: 50px;
     background-color: blueviolet;
 }
