@@ -64,16 +64,6 @@ border: 5px solid red;
 outline: none;
 box-shadow: 10px lightcyan;
 }
-
-.fancy_text::before{
-    content: " ";
-    display: inline-block;
-    border: 1px solid red;
-    width: 16px;
-    height: 16px;
-    border-radius: 50%;
-}
-
 .fancy_text::after{
     content: " ";
     display: inline-block;
@@ -86,4 +76,7 @@ box-shadow: 10px lightcyan;
 .fancy_text::first-letter{
     font-size: 50px;
     font-weight: bold;
+}
+.file_picker::file-selector-button{
+    font-size: 30px;
 }
