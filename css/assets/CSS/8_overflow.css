@@ -5,9 +5,8 @@ float makes in same side
 overflow shows scroll bar box distance 
 margin shows outside the box
 padding shows inside 
-
-
 */
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 .overflow-box{
     width:300px;
@@ -24,6 +23,12 @@ padding shows inside
 
 }
 
-.box-1 {
+.box-1 h2, .box-1 p{
     visibility: hidden;
+}
+.box-1:hover h2, .box-1:hover p{
+    visibility: visible;
+}
+.box-1 {
+    
 }
