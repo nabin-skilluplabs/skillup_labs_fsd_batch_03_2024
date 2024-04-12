@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
+    <link rel="stylesheet" href="./assets/css/9_contact_us.css">
 </head>
 <body>
     <div class="contact_us_outer_box">
@@ -16,7 +17,7 @@
                     46-48 Harris-Street, Harris Park, 2150
                 </address>
                 <p>
-                    <a href="mailto:yamk625@gmail.com">yamk625@gmail.com</a>
+                    <a href="mailto:yamk625@gmail.com">yamk625@gmail.com</a><br>
                     <a href="tel:0424533213">0424533213</a>
                 </p>
             </div>
@@ -24,15 +25,20 @@
                 <h3>Send us message</h3>
                 <form action="/" method="post">
                     <div>
-                        <label for="fullname">FullName</label>
+                        <label for="fullname">FullName:</label>
+                        <input type="text" name="fullname" id="fullname">
+                    </div>
+                    <div>
+                        <label for="email">Email:</label>
                         <input type="email" name="email" id="email">
                     </div>
+
                     <div>
-                        <label for="Message">Message</label>
-                        <textarea name="Message" id="Message">Message</textarea>
+                        <label for="message">Message:</label>
+                        <textarea name="message" id="Message"></textarea>
                     </div>
                     <div>
-                        <input type="submit" value="send Message">
+                        <input type="submit" value="Send Message">
                     </div>
                 </form>
 
