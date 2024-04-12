@@ -6,10 +6,10 @@ body
 {
     font-family: Inter;
     font-size: 18px;
-    line-height: 1.6px;
+    line-height: 1.6;
 }
 
-.contact_us_outer_box{
+.contact_us_outer_box {
     background-color: #ED4545;
     padding: 50px 0;
     float: left;
@@ -17,12 +17,12 @@ body
 
 }
 
-.contact_us_inner_box{
+.contact_us_inner_box {
     max-width: 1024px;
     margin: auto;
 }
 
-.contact_us_intro{
+.contact_us_intro {
     float: left;
     width: 60%;
     padding-right: 20px;
@@ -30,12 +30,12 @@ body
     color: white;
 }
 
-.contact_us_intro h3{
-    font-size: 240px;
+.contact_us_intro h3 {
+    font-size: 24px;
     font-weight: bold;
     text-transform: uppercase;
     margin-top: 30px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 
@@ -43,7 +43,7 @@ body
     font-weight: bold;
     font-size: 36px;
     margin-bottom: 40px;
-    line-height: 1.2px;
+    line-height: 1.2;
 
 }
 
@@ -57,4 +57,6 @@ body
     line-height: 2;
 }
 
-.contact
+.contact_us_intro a:hover {
+    text-decoration: underline;
+}
