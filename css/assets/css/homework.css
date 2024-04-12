@@ -1,0 +1,19 @@
+body {
+    text-align: centre;
+    width: 75%;
+    margin: 0px auto;
+    
+}
+
+.box {
+    background-color: #f3e6e6;
+    text-align:center;
+    height: 300px;
+    width: 1000px;
+    padding: 60px 245px;
+    box-sizing: border-box;
+    line-height: 1.6;
+    float: left;
+    margin-top: 160px;
+}
+

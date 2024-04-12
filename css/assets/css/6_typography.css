@@ -6,6 +6,7 @@ h1 {
     letter-spacing: 10px;
     word-spacing: 10px;
     text-shadow: 8px 8px 8px black;
+    text-transform: capitalize;
 
 
     
