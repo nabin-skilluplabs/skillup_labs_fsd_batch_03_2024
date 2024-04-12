@@ -54,3 +54,61 @@ body{
     text-decoration: underline;
     line-height: 2;
 }
+/*Contact us column End*/
+/*Contact us column form start*/
+
+.contact_us_form{
+    float: left;
+    width: 40%;
+    background-color: white;
+    padding: 30px;
+    box-sizing: border-box;
+}
+.contact_us_form h3{
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 25px;
+
+}
+.contact_us_form div{
+    margin-bottom: 20px;
+}
+.contact_us_form label{
+    display: block;
+    font-size: 15px;
+    margin-bottom: 5px;
+    line-height: 1; 
+
+}
+.contact_us_form input[type="text"], .contact_us_form input[type="email"]
+{
+display: block;
+width: 100%;   
+padding: 10px;
+box-sizing: border-box;
+border: 1px solid #D1cece;
+
+}
+.contact_us_form textarea{
+    width: 100%;
+    height: 100px;
+}
+.contact_us_form input[type="submit"]{
+    color: white;
+    text-transform: uppercase;
+    font-size: 20px;
+    border-radius: 10px;
+    background-color: #ED4545;
+    padding: 20px;
+    font-weight: normal;
+    border: none;
+    cursor: pointer;
+}
+
+.contact_us_form input[type="submit"]:hover{
+    color: rgb(255, 255, 255, 0.8);
+    background-color: rgb(237, 69, 69, 0.8S);
+}
+
+/*Contact us form column End*/
+
