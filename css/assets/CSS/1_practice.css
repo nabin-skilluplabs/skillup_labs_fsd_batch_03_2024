@@ -1,0 +1,33 @@
+@font-face {
+    font-family: Mija;
+    src: url('../fonts/Mija_Bold-webfont-subset-v2.woff2');
+}
+
+
+.noice{
+    font-weight: bold;
+    font-size: 30px;
+    font-family: Arial;
+    text-align: center;
+}
+
+.hello{
+    font-weight:normal;
+    font-size: 15px;
+    text-align: center;
+    font-family: Arial;
+    font-style:normal;
+
+}
+
+.box{
+    width: 50%;
+    height: 500px;
+    border: 5px solid red;
+    padding: 100px;
+    margin: 0;
+    box-sizing: border-box;
+    float: middle;
+
+
+}
