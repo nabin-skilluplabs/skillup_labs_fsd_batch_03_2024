@@ -3,7 +3,7 @@
 body {
     font-family: Inter;
     font-size: 18px;
-    line-height: 1.6px;
+    line-height: 1.6;
 }
 .contact_us_outer_box {
     background-color: #ED4545;
@@ -12,7 +12,7 @@ body {
     width: 100%;
 }
 
-.contact_us_outer_box {
+.contact_us_inner_box {
 margin: 0px auto;
 max-width: 1024px;
 }
