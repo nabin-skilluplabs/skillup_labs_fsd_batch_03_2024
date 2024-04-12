@@ -1,33 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
 @font-face {
     font-family: Mija;
     src: url('../fonts/Mija_Bold-webfont-subset-v2.woff2');
 }
 
 
+body {
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    font-family: Inter;
+}
+
+.box-outer {
+    background-color: burlywood;
+}
 .noice{
     font-weight: bold;
-    font-size: 30px;
-    font-family: Arial;
+    font-size: 40px;
     text-align: center;
 }
 
 .hello{
     font-weight:normal;
-    font-size: 15px;
+    font-size: 18px;
     text-align: center;
-    font-family: Arial;
     font-style:normal;
-
+    line-height: 1.6;
 }
 
 .box{
-    width: 50%;
-    height: 500px;
-    border: 5px solid red;
-    padding: 100px;
-    margin: 0;
+    width: 60%;
+    padding: 100px 50px;
+    margin: 0 auto;
     box-sizing: border-box;
-    float: middle;
-
-
 }
+ 
