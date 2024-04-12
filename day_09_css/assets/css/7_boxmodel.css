@@ -1,0 +1,14 @@
+.box{
+    width: 50%;
+    height: 500px;
+    border: 5px solid red;
+    padding: 100px;
+    margin: 0px;
+    box-sizing: border-box;
+    float: left;
+}
+
+.parent {
+    width: 50%;
+    margin: auto;
+}
