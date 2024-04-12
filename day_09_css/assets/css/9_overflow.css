@@ -15,10 +15,18 @@
     font-family: Inter;
 }
 
-.box-2{
+.box-1 h2, .box-1 p{
     visibility: hidden;
 
 }
 
-.box-1
+.box-1:hover h2, .box-1:hover p{
+    visibility: visible;
+
+}
+
+.box-1{
+    display: block;
+}
+
 
