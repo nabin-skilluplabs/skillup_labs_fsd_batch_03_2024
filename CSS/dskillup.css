@@ -1,0 +1,40 @@
+
+
+.bord{
+    border: 10px;
+background: black;
+color: white;
+    
+}
+p{
+    color: yellow;
+   
+}
+h2{
+    color: white;
+    background-color: black;
+    font-size: small;
+}
+h3,{
+   color: yellow;
+   background-color: black;
+}
+h4{
+    background-color: white;
+
+}
+.trd{
+    background: black;
+}
+p1{
+    color: white;
+}
+p\{
+    color: black;
+}
+.teacher{
+    color: black;
+}
+#Home{
+    background-color: black;
+}
