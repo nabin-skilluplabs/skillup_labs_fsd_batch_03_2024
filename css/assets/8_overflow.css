@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
 .overflow-box{
-    width:300px ;
+width:300px ;
 height:200px ;
 background-color:aqua ;
 overflow-y:auto;
@@ -11,9 +11,18 @@ border-radius:10px;
 box-shadow:0px 0px 10px;
 margin: 20px;
 float: left;
-font-family: Inter ;
+font-family: Inter;
+
+}
+
+.box1 h2, .box1 p {
+    visibility: hidden;
+}
+
+.box1:hover h2, .box1:hover p {
+    visibility: visible;
 }
 
 .box1 {
-    visibility: visible;
+    display: block;
 }
