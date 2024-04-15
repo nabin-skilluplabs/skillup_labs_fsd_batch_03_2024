@@ -11,9 +11,7 @@ body{
 }
 .contact_us_inner_box {
    max-width:1024px;
-   margin:Opx auto;
-   float: left;
-
+   margin: auto;
 }
 .contact_us_intro{
     float:  left;
@@ -59,5 +57,57 @@ margin-bottom:  30px;
     background-color: white;
     padding: 30px;
     box-sizing: border-box;
+}
+
+.contact_us_form h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom:  25px;
+
+}
+
+.contact_us_form div {
+    margin-bottom: 20px;
+}
+
+.contact_us_form label {
+    display: block;
+    font-size: 15px;
+    margin-bottom: 5px;
+    line-height: 1;
+
+}
+
+.contact_us_form input[type="text"], 
+.contact_us_form input[type="email"],
+.contact_us_form textarea 
+ {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    box-sizing : border-box;
+    border: 1px solid #D1CECE;
+
+}
+
+.contact_us_form textarea {
+    height: 100px;
+}
+
+.contact_us_form input[type="submit"] {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 20px;
+    border-radius: 10px;
+    background-color: #ED4545;
+    padding: 20px;
+    font-weight: normal;
+    border: none;
+
+}
+
+.contact_us_form input[type="submit"]:hover {
+    color: rgba(255, 255, 255, 0.8);
+    background-color: rgba (237, 69, 69, 0.8);
 
 }
