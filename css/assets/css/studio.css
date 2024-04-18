@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url(./reset.css);
+
+/* Author: Sarad Adhikari
+Copyright:Skillup Labs
+Last Updated: 18th April 2024 */
+
+body {
+    font-family: Inter;
+    font-size: 18px;
+    line-height: 1.6;
+    background-color: black;
+    color: white;
+
+
+}
+.header{
+    background-image: url(../image/banner.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    background-position: center;
+    padding: 30px 0 70px 0;
+    background-size: cover;
+    float: left;
+    width: 100%;
+    height: 50vh;
+    position: relative;
+}
+.container{
+    width: 350px;
+    color: white;
+    border: solid 5px white;
+    padding: 30px;
+    position: absolute;
+    top: 30px;
+    right: 160px;
+    box-sizing: border-box;
+
+}
+ 
+.container h1{
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 1.3;
+}
+.body{
+    width: 85%;
+    margin: 0 auto;
+}
+
+.about_studio{
+    float: left;
+    width: 50%;
+    padding: 20px 90px 20px 50px;
+    margin-top: 30px;
+    box-sizing: border-box;
+    color: white;
+}
+.about_studio h2{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.about_studio p{
+    font-size: 14px;
+    line-height: 1.8;
+}
+.list{
+    width: 50%;
+    padding: 30px;
+    box-sizing: border-box;
+    float: left;
+}
+
+.listing{
+    width: 50%;
+    color: white;
+    text-align: center;
+    line-height: 1.1;
+    padding: 15px;
+    box-sizing: border-box;
+    float: left;
+}
+
+.listing h6{
+    font-size: 75px;
+    font-weight: 750;
+}
+.listing p{
+    text-transform: uppercase;
+    font-weight: 550;
+    font-size: 13px;
+}
