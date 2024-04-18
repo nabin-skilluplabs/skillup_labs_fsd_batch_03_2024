@@ -2,32 +2,29 @@
 div {
     font-weight: bold;
     height: 220px;
-    width: 700px;
+    width: 100%;
     border: 3px solid black;
     padding: 50px 70px 50px 70px;
     box-sizing: border-box;
     float:none;
     text-align: center;
-    background-color: rgb(212, 200, 201);
+    background-color: rgb(244, 211, 226);
 }
 
-div span:nth-child(1) {
+h2 {
     color: black;
     font-family: Arial, Helvetica, sans-serif;
     font-style: normal;
-    font-weight: 700px;
+    font-weight: 700;
     font-size: larger;
-    
-    
-     
 }
-div span:nth-child(2) {
+
+p {
     color: black;
     font-weight: lighter;
     font-style: normal;
     font-style: normal;
-    font-size: 0%;
-    
+    font-size: 18px;
      
 }
 
