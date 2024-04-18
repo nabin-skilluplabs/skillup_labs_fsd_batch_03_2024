@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url(./reset.css);
+
+/* Author: Akash Yadav
+Email: yadavakash2060@gmail.com
+Copyright:Skillup Labs
+Last Updated: 18th April 2024 */
+
+body{
+    background-color: white;
+    color: black;
+    font-size: 16px;
+    font-family: Inter;
+}
+.intro_banner{
+    height: 90vh;
+    background-image:url(../images/banner_1.png);
+    background-repeat: no-repeat;
+    background-position: center ;
+    background-size: cover;
+    text-align: center;
+    position: relative;
+}
+.heading{
+    position: relative;
+    width: 100px;
+    margin: auto;
+    top: 150px;
+    right:calc(50%-100px/2);
+    letter-spacing: 2px;
+}
+.heading h3{
+    text-transform: uppercase;
+    color: white;
+    font-size: 40px;
+    font-weight: 900;
+    margin: auto;
+    font-family: Inter;
+}
+.heading h6{
+    text-transform: uppercase;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+    font-family: Inter;
+}
+.products{
+    float: right;
+    width: 100%;
+    top: -180px;
+    position: relative;
+
+
+}
+.products-inner{
+    width: 80%;
+    margin: 0px auto;
+
+}
+.product-item{
+    width: 33.33%;
+    font-size: 14px;
+    font-weight: bold;
+    float: left;
+    padding: 40px;
+    box-sizing: border-box;
+    line-height: 1.6;
+
+}
+.product-item h3{
+    margin-top: 10px;
+   
+}
+
+
+.price{
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 20px;
+
+}
+.spacing{
+    margin-top: 30px;
+}
