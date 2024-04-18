@@ -1,6 +1,10 @@
 @import url(reset.css);
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+:root{
+    ---front-color:var( )
+}
 body{
+
     background-color: black;
     color: white;
     font-family: Inter;
@@ -26,13 +30,15 @@ body{
     box-sizing: border-box;
     line-height: 1.2;
     position: absolute;
-   
+    left: calc(50% - 360px/2);
+    top: calc(50% - 440px/2);
 }
 .products{
     position: relative;
     float: left;
     width: 100%;
     top: -100px;
+    z-index: 10;
 }
 
 .product_inner{
@@ -57,4 +63,14 @@ margin: 0px auto;
 .product_item price{
 font-weight: bold;
 font-size: 20px;
+}
+.helpbox{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: fixed;
+    background-color: white;
+    right: 20px;
+    bottom: 20px;
+    z-index: 5;
 }
