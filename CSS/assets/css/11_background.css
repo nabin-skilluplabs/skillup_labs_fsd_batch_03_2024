@@ -15,7 +15,7 @@ body{
     padding:  40px 0;
   
 }
-.intro_banner{
+.intro_banner h1{
     font-size: 48px;
     border:5px solid white ;
     font-weight: bold;
