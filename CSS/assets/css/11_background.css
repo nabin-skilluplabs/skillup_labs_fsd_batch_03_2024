@@ -1,0 +1,27 @@
+@import url(./reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+body{
+    background-color: black;
+    color: white;
+    font-family: Inter;
+    font: size 16px; 
+
+}
+.intro_banner {
+ background-image:url(../img/img.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding:  40px 0;
+  
+}
+.intro_banner{
+    font-size: 48px;
+    border:5px solid white ;
+    font-weight: bold;
+    width: 360px;
+    box-sizing: border-box;
+    padding:30px;
+    line-height: 1.2;
+
+}
