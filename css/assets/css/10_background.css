@@ -1,0 +1,60 @@
+@import url(reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+body{
+    background-color: black;
+    color: white;
+    font-family: Inter;
+    font-size: 16px; 
+}
+.intro_banner{
+    background-image: url(../images/background_image.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 40px 0;
+    float: left;
+    width: 100%;
+    height: 70vh;
+    position: relative;
+}
+.intro_banner h1{
+    font-size: 45px;
+    font-weight: bold;
+    border: 5px solid #ffffff;
+    width: 360px;
+    padding: 30px;
+    box-sizing: border-box;
+    line-height: 1.2;
+    position: absolute;
+   
+}
+.products{
+    position: relative;
+    float: left;
+    width: 100%;
+    top: -100px;
+}
+
+.product_inner{
+width: 1038px;
+margin: 0px auto;
+}
+
+.product_item{
+    width: 306px;
+    float: left;
+    margin: 0px 20px;
+
+}
+.product_item img{
+    max-width: 100%;
+    height: auto;
+}
+.product_item h3{
+    font-weight: bold;
+    margin: 15px 0;
+}
+.product_item price{
+font-weight: bold;
+font-size: 20px;
+}
