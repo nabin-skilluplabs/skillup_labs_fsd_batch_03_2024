@@ -32,5 +32,27 @@ body{
     margin-right: 100px;
     position: absolute;
     left: calc(50% - 360px/2);
-    top: calc(50% - 625.297px/2);
+    top: calc(50% - 348px/2);
+}
+.products{
+    position: relative;
+    float: left;
+    width: 100%;
+}
+.product-item{
+    width: 306px;
+    position: absolute;
+}
+.product-item img{
+    max-width: 100%;
+    height: auto;
+}
+.product-item h3{
+    font-weight: bold;
+    margin: 15px 0;
+
+}
+.product-item .price{
+    font-weight: bold;
+    font-size: 20px;
 }
