@@ -38,10 +38,13 @@ body{
     position: relative;
     float: left;
     width: 100%;
+    top: -100px;
 }
 .product-item{
     width: 306px;
-    position: absolute;
+    float: left;
+    margin: 0px 20px;
+    
 }
 .product-item img{
     max-width: 100%;
@@ -55,4 +58,8 @@ body{
 .product-item .price{
     font-weight: bold;
     font-size: 20px;
+}
+.products-inner{
+    width: 1038px;
+    margin: 0px auto;
 }
