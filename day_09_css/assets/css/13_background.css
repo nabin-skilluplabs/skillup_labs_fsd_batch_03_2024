@@ -1,0 +1,89 @@
+@import url(./reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+body{
+    --front-color:pink;
+    background-color: black;
+    color: var(--front-color);
+    font-family: Inter;
+    font-size: 16px;
+
+
+}
+
+.intro_banner{
+    height: 50vh;
+    border: 1px solid white;
+    background-image:url('../image/poster1.png');
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover;
+    padding: 40px 0;
+    float: left;
+    width: 100%;
+    background-blend-mode: multiply;
+    
+}
+
+.intro_banner h1{
+    font-size: 40px;
+    font-weight: bold;
+    border: 5px solid white;
+    width: 360px;
+    padding: 30px;
+    box-sizing: border-box;
+    line-height: 1.2;
+    float: right ;
+    position: absolute;
+    left: calc(50%-360px/2);
+    top: calc(50%-348/2);
+
+}
+
+.products{
+    position: relative;
+    float: left;
+    width: 100%;
+    top: -100px;
+    z-index: 11;
+
+}
+
+.product_inner{
+    width: 1030px;
+    margin: 0px auto;
+}
+
+.product_items{
+    width: 306px;
+    float: left;
+    margin: 0px 20px;
+
+}
+
+.product_items img{
+    max-width: 100%;
+    height: auto;
+}
+
+.product_items h3{
+    font-size: bold;
+    margin: 15px 0;
+}
+
+.product_items.price{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.helpbox {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color:blue;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 5;
+
+}
