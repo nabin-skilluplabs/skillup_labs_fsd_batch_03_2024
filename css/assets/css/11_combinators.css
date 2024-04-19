@@ -3,3 +3,11 @@
 .space_box li {
     border: 1px solid red;
 }
+
+.child_box > li > ul > li {
+    border: 1px solid red;
+}
+
+.adj_sib_box > li:nth-child(1) + li {
+    border: 1px solid red;
+}
