@@ -22,6 +22,7 @@ body {
     width: 100%;
     height: 70vh;
     position: relative;
+    background-blend-mode: color-burn;
 }
 
 .intro_banner h1 {
@@ -46,12 +47,12 @@ body {
 }
 
 .products-inner {
-    width: 1038px;
+    width: 80%;
     margin: 0px auto;
 }
 
 .product-item {
-    width: 306px;
+    width: calc((100%/3) - 40px);
     float: left;
     margin: 0px 20px;
 }
