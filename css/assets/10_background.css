@@ -1,11 +1,13 @@
 @import url(./reset.css);
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
+
 body {
     background-color: #000000;
-    color: white;
+    color: var(--front-color);
     font-family: Inter;
     font-size: 16px;
+    --front-color: #ffffff;
 }
 
 .intro_banner {
@@ -18,9 +20,11 @@ float: left;
 width: 100%;
 height: 70vh;
 position: relative;
-
-
+background-blend-mode: luminosity;
+background-color: pink;
+linear-gradient: (#c1d27c 0 #ccc0cc)
 }
+
 
 .intro_banner h1 {
     font-size: 48px;
@@ -33,7 +37,53 @@ position: relative;
     float: center;
     margin-right: 100px;
     position: absolute;
-    left: calc(50% - 360px/2);
+    left: calc(50% - 290px/2);
     top: calc(50% - 430px/2);
 
 }
+.products {
+    position: relative;
+    float: left;
+    width: 100%;
+    top: -200px;
+    z-index: 10;
+}
+.products-inner {
+    width: 1038px;
+    margin: 0px auto;
+}
+
+
+
+.product-item {
+    width: 306px;
+    float: left;
+    margin: 0 20px;
+
+
+}
+.product-item img {
+    max-width: 100%;
+    height: auto;
+
+}
+.product-item h3 {
+    font-weight: bold;
+    margin: 15px 0;
+}
+.product-item price {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.helpbox {
+width: 50px;
+height: 50px;
+border-radius: 50%;
+position: fixed;
+right: 20px;
+bottom: 20px;
+background-color: white;
+z-index: 11;
+}
+
