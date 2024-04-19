@@ -1,0 +1,19 @@
+
+
+.space_box li{
+    border: 1px solid red;
+}
+
+
+.child_box > li > ul{
+    border: 1px solid red;
+
+}
+
+.adj_sib_box > li:nth-child(2) + li {
+    border: 1px solid red;
+}
+
+.gen_sib_box > li:nth-child(1) ~ li {
+    border: 1px solid red;
+}

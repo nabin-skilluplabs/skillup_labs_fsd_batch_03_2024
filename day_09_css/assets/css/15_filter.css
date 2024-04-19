@@ -1,0 +1,22 @@
+
+
+.blur_photo{
+    filter: blur(5px);
+}
+
+.blur_photo:hover{
+    filter: none;
+}
+
+
+.bright_photo {
+    filter: brightness(150%);
+}
+
+.contrast_photo {
+    filter: contrast(120%);
+}
+
+.drop_shadow {
+    filter: drop-shadow(10px 10px rgba(0, 0, 0 ));
+}
