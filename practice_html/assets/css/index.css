@@ -3,16 +3,72 @@ body{
     background-color: white;
     font-family: Inter;
     font-size: 16px;
-    color: black;
-
+    margin: auto;
+    box-sizing: border-box;
+    border: 5px solid white;
+    width: 100%;
+    margin-right: 200px;
+    margin-left: 500px;
+    margin-top: 150px;
+}
+    
+h3{
+    font-weight:normal;
+    
 }
 .left_box{
-    float: left;
-    padding: 25px;
+    
     box-sizing: border-box;
-    margin: auto;
+    margin: 20px 0px;
+    width: 15%;
+    padding: 0px;
+    float: left;
+    box-sizing: border-box;
+}
+.box_1{
+    color: white;
+    background-color: black;
+    padding: 10px 10px 20px 10px;
+    
+}
+.box_1 img{
+    border-radius: 50%;
+    background-color: white;
+    padding: 10px;
 
 }
-.right_box{
-    padding-right: 10px;
+.box_4{
+    color: white;
+    background-color: black;
+    padding: 10px;
+}
+.box_4 img{
+    border-radius: 50%;
+    background-color: white;
+    padding: 10px;
+    
+
+}
+.box_3{
+    color: black;
+    padding: 10px;
+    background-color: white;
+    
+}
+.box_3 img{
+    color: white;
+    padding: 10px;
+    background-color: black;
+    border-radius: 50%;
+
+}
+.box_2{
+    color: black;
+    padding: 10px;
+}
+.box_2 img{
+    border-radius: 50%;
+    background-color: black;
+    color: white;
+    padding: 10px;
 }
