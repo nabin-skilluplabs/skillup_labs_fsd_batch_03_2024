@@ -4,8 +4,15 @@ body{
     font-family: Inter;
     font-size: 16px;
     color: black;
+
 }
-.box_1{
-box-sizing: border-box;
-float: left;
+.left_box{
+    float: left;
+    padding: 25px;
+    box-sizing: border-box;
+    margin: auto;
+
+}
+.right_box{
+    padding-right: 10px;
 }
