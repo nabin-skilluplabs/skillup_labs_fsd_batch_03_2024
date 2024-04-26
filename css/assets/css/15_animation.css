@@ -15,6 +15,26 @@ body {
     position: relative;
 }
 
+.big-football {
+  width: 80px;
+  height: 80px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  animation-name: move-corners;
+  animation-duration: 10s;
+  position: absolute;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  z-index: 2;
+  animation-iteration-count: infinite;
+}
+
+.orange-football {
+  background-color: orange;
+  animation-duration: 15s;
+  z-index: 3;
+  animation-iteration-count: infinite;
+}
 .football {
     display: inline-block;
     width: 80px;
@@ -27,7 +47,9 @@ body {
     animation-duration: 1s, 5s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
+    animation-fill-mode:forwards;
     position: absolute;
+    z-index: 5;
   }
   .football:before {
     content: "";
@@ -71,21 +93,25 @@ body {
       top: 15px;
       left: 15px;
     }
-    25% {
+    20% {
       top: 15px;
       left: calc(100% - 95px);
     }
 
-    50% {
+    40% {
       top: calc(100% - 95px);
       left: calc(100% - 95px);
     }
-    75% {
+    60% {
       top: calc(100% - 95px);
       left: 15px;
     }
-    to {
+    80% {
       top: 15px;
       left: 15px;
+    }
+    100%{
+      top: calc(50% - 40px);
+      left: calc(50% - 40px);
     }
   }
