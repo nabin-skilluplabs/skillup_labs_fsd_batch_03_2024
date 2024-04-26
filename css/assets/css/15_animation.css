@@ -24,7 +24,7 @@ body {
     position: relative;
     background: radial-gradient(circle at 50% 120%, #323232, #0a0a0a 80%, #000000 100%);
     animation-name: rotate-ball, move-corners ;
-    animation-duration: 1s;
+    animation-duration: 1s, 5s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     position: absolute;
@@ -77,13 +77,15 @@ body {
     }
 
     50% {
-
+      top: calc(100% - 95px);
+      left: calc(100% - 95px);
     }
     75% {
-
+      top: calc(100% - 95px);
+      left: 15px;
     }
     to {
-      /* top: 15px;
-      left: 15px; */
+      top: 15px;
+      left: 15px;
     }
   }
