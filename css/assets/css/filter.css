@@ -1,0 +1,13 @@
+.blur_photo{
+    filter: blur(50px);
+}
+.bright_photo{
+    filter: brightness(120%);
+}
+.contrast_image{
+    filter: contrast(120%);
+
+}
+.ds_image{
+    filter: drop-shadow(10px 10px 10px rgba(255,0,0,0.7));
+}

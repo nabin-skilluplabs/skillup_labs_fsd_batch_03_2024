@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+.space_box li {
+    border: 1px solid red;
+}
+.child_box > li > ul > li{
+    border: 1px solid red;
+}
+.as_box > li:nth-child(1) + li{
+    border: 1px solid red;
+}
+.gp_box > li:nth-child(2) ~ li {
+    border: 1px solid red;
+}
