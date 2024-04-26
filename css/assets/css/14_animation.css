@@ -25,19 +25,14 @@ body {
     border-radius: 50%;
     background: radial-gradient(circle at 50% 120%, #323232, #0a0a0a 80%, #000000 100%);
     animation-name: rotate-ball, move-corners;
-    animation-duration: 5s, 5s;
+    animation-duration: 5s, 20s;
     animation-timing-function: linear;
     animation-iteration-count: infinite, 1;
     animation-fill-mode:backwards;
     position: absolute;
     z-index: 2;
 }
-.orange-football{
-    background-color: orange;
-    animation-duration: 15s;
-    animation-iteration-count: infinite;
-    z-index: 3;
-}
+
 .big-football{
     width: 80px;
     height: 80px;
@@ -50,7 +45,12 @@ body {
     animation-duration: 10s;
     z-index: 5;
 }
-
+.orange-football{
+    background-color: orange;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    z-index: 3;
+}
 .football:before {
     content: "";
     position: absolute;
@@ -99,31 +99,35 @@ body {
         left: 15px;
     }
 
-    20% {
+    17% {
         top: 15px;
         left: calc(100% - 95px);
 
     }
 
-    40% {
+    34% {
         top: calc(100% - 95px);
         left: calc(100% - 95px);
 
     }
 
-    65% {
+    51% {
         top: calc(100% - 95px);
         left: 15px;
 
     }
 
-    80% {
+    68% {
         top: 15px;
         left: 15px;
     }
-    to{
+    85%{
         top: calc(50% - 40px);
         left: calc(50% - 40px);
+    }
+    100%{
+        top: 15px;
+        left: 15px;
     }
 
 }
