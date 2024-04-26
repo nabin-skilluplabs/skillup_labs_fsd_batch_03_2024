@@ -24,8 +24,9 @@ body {
     animation-duration: 10s;
     position: absolute;
     animation-timing-function: linear;
-    animation-fill-mode: forwards;
+    animation-fill-mode: revert-layer;
     animation-iteration-count: infinite;
+ 
 
 
 }
@@ -47,7 +48,8 @@ body {
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     position: absolute;
-    animation-fill-mode: forwards;
+    animation-fill-mode: revert-layer;
+    
 }
 
 .ball:before {
@@ -101,30 +103,34 @@ body {
 
     }
 
-    20% {
+    17% {
         top: 15px;
         left: calc(100% - 95px);
 
     }
 
-    40% {
+    24% {
         top: calc(100% - 95px);
         left: calc(100% - 95px)
     }
 
-    60% {
+    51% {
         top: calc(100% - 95px);
         left: 15px;
 
     }
 
-    80% {
+    68% {
         top: 15px;
         left: 15px;
 
     }
-    100%{
+    85%{
         top: calc(50% - 40px);
         left: calc(50% - 40px);
+    }
+    100%{top: 15px;
+        left: 15px;
+
     }
 }
