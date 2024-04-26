@@ -12,6 +12,7 @@ body {
     background-color: green;
     padding: 15px;
     box-sizing: border-box;
+    position: relative;
 }
 
 .football {
@@ -22,10 +23,11 @@ body {
     border-radius: 50%;
     position: relative;
     background: radial-gradient(circle at 50% 120%, #323232, #0a0a0a 80%, #000000 100%);
-    animation-name: rotate-ball;
+    animation-name: rotate-ball, move-corners ;
     animation-duration: 1s;
-    animation-timing-function:linear;
+    animation-timing-function: linear;
     animation-iteration-count: infinite;
+    position: absolute;
   }
   .football:before {
     content: "";
@@ -54,9 +56,34 @@ body {
 
   @keyframes rotate-ball {
     from {
-        transform: rotate(0deg);
+      transform: rotate(0deg)  scale(100%);
+    }
+    50% {
+      transform: rotate(180deg) scale(80%);
     }
     to {
-        transform: rotate(360deg);
+      transform: rotate(360deg) scale(100%);
+    }
+  }
+
+  @keyframes move-corners {
+    from {
+      top: 15px;
+      left: 15px;
+    }
+    25% {
+      top: 15px;
+      left: calc(100% - 95px);
+    }
+
+    50% {
+
+    }
+    75% {
+
+    }
+    to {
+      /* top: 15px;
+      left: 15px; */
     }
   }
