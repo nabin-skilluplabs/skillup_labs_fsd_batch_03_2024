@@ -43,7 +43,6 @@ h2:hover{
     transition-duration: 2s;
     transition-timing-function: ease-in;
     transform: rotate(0deg);
-
 }
 
 .fancy-button:hover {
