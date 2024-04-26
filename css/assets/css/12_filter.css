@@ -1,0 +1,22 @@
+img {
+    height: 200px;
+}
+.blur_photo {
+    filter: blur(10px);
+}
+
+.blur_photo:hover {
+    filter: none;
+}
+
+.bright_photo {
+    filter: brightness(120%);
+}
+
+.contrast_photo {
+    filter: contrast(120%);
+}
+
+.drop_shadow_photo {
+    filter: drop-shadow(20px 20px 20px black);
+}

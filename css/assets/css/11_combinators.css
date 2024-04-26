@@ -11,3 +11,8 @@
 .adj_sib_box > li:nth-child(1) + li {
     border: 1px solid red;
 }
+
+.gen_sib_box > li:nth-child(1) ~ li {
+    border: 1px solid red;
+}
+
