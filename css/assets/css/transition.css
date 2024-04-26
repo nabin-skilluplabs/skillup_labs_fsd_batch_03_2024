@@ -5,7 +5,8 @@
     border-radius: 10px;
     transition-property: border-radius, transform;
     transition-duration: 1s, 1s;
-    transition-timing-function: ease;
+    transition-timing-function: ease, ease-in;
+    transition-delay: 100ms;
     transform: rotate(0deg);
 }
 .box:hover{
@@ -16,12 +17,32 @@
 h2{
     color: red;
     font-size: 30px;
-    transition-property: color, font-size;
-    transition-duration: 1s, 1s;
-    transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition-property: color, font-size, font-style;
+    transition-duration: 1s, 1s, 2s;
+    transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1),ease,ease-in;
+    font-style: normal;
 }
 
 h2:hover {
     color: blue;
-    font-size: 60;
+    font-size: 60px;
+    font-style: italic;
+}
+.fancy-button{
+    font-size: 16px;
+    padding: 8px 16px;
+    border: none;
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    margin: 10px;
+    box-shadow: none;
+    transition-property: border, box-shadow, background-color;
+    transition-duration: 500ms;
+    transition-timing-function: ease-in;
+}
+.fancy-button:hover{
+    border-color: #dadce0;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.2);
+    background-color: #dadce0;
+
 }
