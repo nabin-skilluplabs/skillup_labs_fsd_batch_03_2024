@@ -57,3 +57,7 @@ p{
     background-color: pink;
     text-align: left;
 }
+
+.hello{
+    float:right;
+}
