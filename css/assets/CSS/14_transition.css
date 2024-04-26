@@ -23,7 +23,7 @@ h2:hover{
     transition-duration: 1s, 1s;
     transition-timing-function: ease, ease-in;
     transition-delay: 3s;
-    transform: rotate;
+    transform: rotate(0deg);
 
 }
 .box:hover {
@@ -39,14 +39,16 @@ h2:hover{
     background-color:#f8f9fa;
     margin: 10px;
     box-shadow: none;
-    transition-property: border, box-shadow;
+    transition-property: border, box-shadow, transform;
     transition-duration: 2s;
     transition-timing-function: ease-in;
-    transform: rotate;
+    transform: rotate(0deg);
 
 }
 
 .fancy-button:hover {
     border-color: #dadce0;
     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+    transform: rotate(360deg);
 }
+
