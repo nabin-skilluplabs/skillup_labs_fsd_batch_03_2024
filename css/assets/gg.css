@@ -1,0 +1,46 @@
+.outer {
+
+    background-color: white;
+    color: black;
+    padding: 20px;
+}
+
+.aa {
+    background-color: black;
+    color: white;
+    padding: 15px 8px 10px 5px;
+    box-sizing: border-box;
+    border: 5px solid black;
+
+    
+}
+
+.bb {
+    background-color: white;
+    color: black;
+    padding: 15px 8px 10px 5px;
+    border: 5px solid white;
+}
+
+
+.cc {
+    background-color: black;
+    color: white;
+    padding: 15px 8px 10px 5px;
+    border: 5px solid black;
+}
+
+.dd {
+    background-color: white;
+        color: black;
+        padding: 15px 8px 10px 5px;
+        border: 5px solid white;
+
+}
+
+ 
+        
+        
+            
+    
+        
