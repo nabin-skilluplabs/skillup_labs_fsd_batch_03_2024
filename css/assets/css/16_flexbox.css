@@ -6,9 +6,10 @@
     flex-direction: row;
     height: 150vh;
     gap: 15px;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: center;
-    align-items: stretch;
+    align-items: flex-end;
+    align-content: center;
 }
 .item{
     padding: 10px;
@@ -16,4 +17,21 @@
     background-color: beige;
     height: 200px;
     /*width: calc(25% - (45px/4));*/
+}
+.item-1{
+    order: 5;
+    flex-grow: 6;
+}
+.item-2{
+    order: 4;
+}
+.item-8{
+    order: -1;
+    flex-shrink: 6;
+}
+.item-7{
+    align-self: flex-start;
+}
+.item-5{
+    align-self: center;
 }
