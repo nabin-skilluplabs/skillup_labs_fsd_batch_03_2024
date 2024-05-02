@@ -5,6 +5,8 @@ body{
     color: white;
     font-family: Inter;
     font: size 16px; 
+    
+
 
 }
 .intro_banner {
@@ -13,15 +15,64 @@ body{
     background-position: center;
     background-size: cover;
     padding:  40px 0;
-  
+    float: left;
+    width: 100%;
+    position: relative;
+    height: 70vh;
+    
+
 }
 .intro_banner h1{
-    font-size: 48px;
+    font-size: 40px;
     border:5px solid white ;
     font-weight: bold;
     width: 360px;
     box-sizing: border-box;
     padding:30px;
     line-height: 1.2;
+   position: absolute;
+   left: calc(50% - 350px/2);
+   top: calc(50% - 348px/2);
+}
+.products{
+    position: relative;
+    float: left;
+    width: 100%;
+    top: -100px;
+    z-index: 3;
 
+
+}
+.product_inner{
+    width: 1038px;
+    margin: 0px auto;
+}
+.product-item{
+    width: 306px;
+   float: left;
+    margin: 0px 20px;
+}
+.product-item img{
+    max-width: 100%;
+    height: auto;}
+
+.product-item_img h3{
+    font-size: bold;
+    margin: 15px;
+
+}
+.price{
+    font-weight: bold;
+    font-size: 2opx;
+
+}
+.helpbox {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+    position: fixed;
+    right: 20px;
+    z-index: 2;
+    
 }

@@ -1,0 +1,36 @@
+.box{
+    width: 100px;
+    height:100px;
+    background-color: red;
+    transform: translate(50px, 50px);
+}
+
+
+
+.box1{
+    width: 100px;
+    height:100px;
+    background-color: red;
+    transform: translate(50px, 50px);
+}
+.mt-100{
+    margin: 100px;
+}
+.vertical_title{
+    transform: rotate(90deg);
+    width: 100px;
+    background-color: aqua;
+}
+.box2{
+    transform: rotate(45deg);
+
+}
+
+.box3:hover{
+    transform: scale(150%);
+    
+}
+.box4{
+    transform: skew(60deg);
+    
+}

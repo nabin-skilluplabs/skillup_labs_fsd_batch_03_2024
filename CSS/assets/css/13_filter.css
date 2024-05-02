@@ -1,0 +1,15 @@
+.blur_photo{
+    filter: blur(100px);
+}
+.blur_photo:hove{
+    filter: none;
+}
+.bright_photo{
+    filter: brightness(50%);
+}
+.contrast_photo,shadow_photo {
+    filter: contrast(50%);
+}
+.shadow_photo{
+    filter: drop-shadow(20px 20px 30px);
+}
