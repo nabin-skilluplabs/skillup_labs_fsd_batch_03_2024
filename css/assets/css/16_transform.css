@@ -1,0 +1,33 @@
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    margin-left: 100px;
+}
+.mt-100{
+    margin-top: 100px;
+}
+
+.vertical-title{
+    transform: rotateX('90deg');
+    width: 100px;
+
+}
+
+.box1{
+    transform: translate(50px, 50px);
+}
+.box2{
+    transform: rotate(45deg);
+}
+
+.box3:hover{
+    transform: scale(210%);
+
+}
+
+.box4{
+
+    transform: skew(45deg);
+
+}
