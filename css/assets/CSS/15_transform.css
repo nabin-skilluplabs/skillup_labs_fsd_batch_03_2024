@@ -22,3 +22,17 @@ transform: rotate(45deg);
 
 }
 
+
+.box3:hover {
+    transform: scale(110%);
+}
+
+
+.box4 {
+    transform: skew(50deg);
+}
+
+.box5 {
+flex-direction: column-reverse;
+flex-shrink: 100;
+}

@@ -1,0 +1,42 @@
+:root {
+    --main-font-family: Inter;
+}
+
+body {
+    font-family: Inter;
+    padding: 50px;
+}
+
+.sandhya {
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.main-container {
+    display: flex;
+}
+
+.service-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.service-container>div {
+    flex-basis: 50%;
+    padding: 25px;
+    box-sizing: border-box;
+}
+
+.service-container>div:nth-child(1),
+.service-container>div:nth-child(40) {
+    background-color: black;
+    color: #fff;
+
+}
+
+.service-container p {
+    font-size: 18;
+    line-height: 1.6;
+    margin-top: 15px;
+}
