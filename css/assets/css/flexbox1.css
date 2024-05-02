@@ -1,0 +1,42 @@
+@import url(./reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+:root{
+    --main-font-family: Inter;
+}
+body{
+    font-family: var(--main-font-family);
+    padding: 50px;
+}
+h1{
+    font-size: 40px;
+    font-weight: 500;
+     margin-bottom: 15px;
+
+}
+.intro{
+    font-size: 32px;
+    line-height: 1.6;
+    margin-bottom: 50px;
+}
+.main-container{
+    display: flex;
+}
+.service-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.service-container>div{
+    flex-basis: 50%;
+    padding: 25px;
+    box-sizing: border-box;
+}
+.service-container>div:nth-child(1),
+.service-container>div:nth-child(4){
+    background-color: black;
+    color: white;
+}
+.service-container p{
+    font-size: 18px;
+    line-height: 1.6;
+    margin-top: 15px;
+}
