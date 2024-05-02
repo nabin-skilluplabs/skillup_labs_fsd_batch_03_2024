@@ -1,0 +1,37 @@
+.container{
+    background-color: black;
+    font-size: 50px;
+    display: flex;
+    padding: 20px;
+    flex-direction: row;
+    gap: 15px;
+    flex-wrap: nowrap;
+    justify-content: center;
+    height: 150vh;
+    align-items: center;
+    align-content: center;
+
+}
+.item{
+    background-color: white;
+    padding: 10px;
+    box-sizing: border-box;
+    height: 200px;
+    flex-grow: 1;
+    flex-basis: 20%;
+    /* width: calc(25% - (45px/4)) */
+
+}
+.item1{
+    flex-grow: 2;
+}
+.item2{
+    flex-shrink: 3;
+}
+.item5{
+    align-self: flex-start;
+}
+
+.item8{
+    align-self: flex-end;
+}
