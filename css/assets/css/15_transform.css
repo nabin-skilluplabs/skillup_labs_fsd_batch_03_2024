@@ -1,0 +1,30 @@
+.box {
+width: 100px;
+height: 100px;
+background-color: red;
+}
+
+.box1 {
+    transform: translate(50px, 50px);
+}
+.box2 {
+    transform: rotate(45deg);
+}
+.mt-100 {
+    margin-top: 100px;
+}
+.verticle-title{
+    transform: rotate(90deg);
+    width: 100px;
+    background-color: green;
+}
+
+.box3 {
+    transform: scale(200%);
+    margin-top: 100px;
+}
+
+.box4 {
+transform: skew(45deg);
+/* transform: matrix(); */
+}
