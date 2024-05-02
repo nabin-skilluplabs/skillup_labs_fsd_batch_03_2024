@@ -1,0 +1,60 @@
+/* 
+Aurthor:Saurab Kumar Sunuwar
+Email:devilrawacha@gmail.com
+Copyright:Skillup Labs
+Last visted:
+
+*/
+*{
+    background-color: antiquewhite ;
+    margin: 0; padding: 0;
+    color: aqua;
+}
+
+h1{font-size: 100px;
+    color: brown;
+
+}
+h2{
+    font-size: 50px;
+    color: blue;
+}
+#special_heading{
+    color: aqua;
+
+}
+.Danger1{
+    font-style: italic;
+    color: red;
+}
+input[type="text"]{
+    border: 1px solid red
+}
+input[value="Submit"]{
+    background-color: green;
+    
+}
+input[value="Reset"]{ 
+    background-color: yellow;
+}
+input[type="button"]{
+    font-size: 25px;
+}
+input{
+    padding: 15px;
+}
+input[placeholder="Enter your email.."]{
+border: 2px solid green;
+}
+h1,h2,h3,h4,h5,input,button{
+    text-transform: uppercase;
+}
+input[ type="button"]:hover,button:hover{ background-color: red;
+    font-weight: bold;
+
+}
+input[type=text]:focus{
+    border: 5px solid red;
+    outline: none;
+
+}
