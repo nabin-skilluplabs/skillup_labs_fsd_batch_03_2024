@@ -22,8 +22,9 @@
         width: 360px;
         padding: 30px;
         margin-right: 100px;
-        position: absolute;
+        position: center;
         color: white;
+        text-align: center;
     
     }
 
