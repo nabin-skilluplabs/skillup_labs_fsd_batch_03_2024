@@ -1,0 +1,43 @@
+@font-face {
+    font-family:  Mija;
+    src: url('../font/Mija_Bold-webfont-subset-v2.woff2');
+}
+
+h1{
+    font-size: 5vw;
+    font-weight: normal;
+    font-family: Mija;
+    font-style: italic;
+    letter-spacing: 10px;
+    word-spacing: 200px;
+    text-shadow: 10px 5px 5px; color: rebeccapurple;
+}
+
+
+h1 span:nth-child(1) {
+    color: red;
+    font-family: cursive;
+    font-size: 50px;
+    text-transform: uppercase;
+
+}
+
+h1 span:nth-child(2){
+    color: green;
+   
+}
+
+p{
+    font-size: 10px;
+    line-height: 1.6em;
+    text-decoration: underline;
+    text-align: center;
+    text-shadow: 2px 2px 2px ; color: black;
+    text-transform: capitalize;
+}
+
+code{
+    font-family: Mijja;
+    border: 1px solid red;
+    background-color: aqua;
+}
