@@ -17,3 +17,11 @@
 .box2 {
     transform: rotate(45deg);
 }
+
+.box3:hover {
+    transform: scale(110%);
+}
+
+.box4 {
+    transform: skew(45deg);
+}
