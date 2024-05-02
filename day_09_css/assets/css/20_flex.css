@@ -1,0 +1,42 @@
+
+.container {
+    background-color: #3d3d3d;
+    font-size: 50px;
+    display: flex;
+    padding: 20px;
+    flex-direction:row;
+    height: 150vh;
+    gap: 15px;
+    flex-wrap: nowrap;
+   justify-content: center;
+   align-items: stretch;
+   align-content:center;
+}
+
+
+.item {
+    padding: 10px;
+    background-color: #fff;
+   /* width: calc(25% - (45px/4)); */
+    box-sizing: border-box;
+    height: 200px;
+    flex-basis: 20%;
+
+}
+
+.item1 {
+    order:5;
+    flex-grow: 3;
+}
+
+.item8 {
+    flex-shrink: 3;
+}
+
+.item7 {
+    align-self: center;
+}
+
+.item5 {
+    align-self:flex-end;
+}
