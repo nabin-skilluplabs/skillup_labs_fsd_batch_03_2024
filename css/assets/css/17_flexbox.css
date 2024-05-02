@@ -1,0 +1,39 @@
+.container {
+    background-color: #3d3d3d;
+    font-size: 50px;
+    display: flex;
+    padding: 20px;
+    flex-direction: row;
+    height: 150vh;
+    gap: 15px;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-end;
+    align-content: center;
+}
+.item {
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: #fff;
+    height: 200px;
+    flex-basis: 20%;
+    /* width: calc(25% - (45px/4)); */
+}
+
+.item1 {
+    order: 5;
+    flex-grow: 6;
+}
+.item2{
+    order: 4;
+}
+.item8 {
+    order: -1;
+    flex-shrink: 3;
+}
+.item7 {
+    align-self: flex-start;
+}
+.item5 {
+    align-self: center;
+}
