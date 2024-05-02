@@ -2,9 +2,26 @@
     width: 100px;
     height: 100px;
     background-color: red;
-    transform: translate(50px,60px)
+    
 
 }
 .box-1{
     transform: translate(50px , 50px)
+}
+.mt-100{
+    margin-top: 100px;}
+.vertical-title{
+    transform: rotate(90deg);
+    background-color: blue;
+    width: 100px;
+
+}
+.box-2{
+    transform: rotate(45deg);
+}
+.box-3:hover{
+   transform: scale(110%); 
+}
+.box-4:hover{
+    transform: skew(45deg);
 }
