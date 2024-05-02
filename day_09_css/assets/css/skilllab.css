@@ -1,0 +1,96 @@
+.right_align{
+    text-align: right;
+    
+}
+
+.first_paragraph{
+    background-color: black;
+    color: white;
+    font-size: 15px;
+}
+
+.text_yellow{
+    color: yellow;
+}
+
+.enroll_button{
+    background-color: yellow;
+    color: black;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.learn_more{
+    color: yellow;
+}
+
+.second_paragraph{
+    text-align: center;
+}
+
+.curriculum{
+    background-color: black;
+    color: white;
+    font-size: 16px;
+}
+
+.table_style{
+    width: 100%;
+    border-collapse: collapse;
+
+}
+
+.table_style th{
+    text-align: left;
+    color: yellow;
+}
+
+.space_between{
+    height: 25px;
+}
+
+.rating {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: left; 
+}
+
+.icons {
+    
+    margin-bottom: 20px; 
+}
+
+.testimonial {
+    max-width: 600px; 
+}
+
+/* CSS styles for layout */
+.container {
+    display: flex;
+}
+
+.table1 {
+    width: 30%; 
+    margin-right: 20px; 
+}
+
+.table2 {
+    width: 70%; 
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
+
+
+

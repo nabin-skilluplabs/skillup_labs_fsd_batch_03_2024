@@ -1,0 +1,118 @@
+/* this is the comment option
+Author: Suraj Neupane
+Email:Surajneupane02@gmail.com
+Copyright: SuraJNCodeHuB
+last visited: 5th April 2024
+*/
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Rubik+Scribble&display=swap')
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 100px;
+    color: brown;
+}
+
+h2 {
+    font-size: 50px;
+    color: blue;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+#special_heading {
+    color: aqua;
+    text-decoration: underline;
+}
+
+.danger_text {
+    color: red;
+    font-style: italic;
+}
+
+input[type="text"] {
+    border: 1px solid red;
+}
+
+input[value="submit"] {
+    background-color: rgb(10, 219, 10);
+}
+
+input[value="reset"] {
+    background-color: rgb(252, 252, 15);
+}
+
+input[type="button"] {
+    font-size: 25px;
+}
+
+input.submit_btn[type="button"] {
+    padding: 15px;
+}
+
+input[placeholder="Enter your email address..."] {
+    border: 2px solid greenyellow;
+}
+
+
+input[type="button"]:hover,
+button:hover {
+    background-color: red;
+    font-weight: bold;
+}
+
+input[type="text"]:focus {
+    border: 2px solid red;
+    outline: none;
+}
+
+.no_color {
+    color:black !important;
+}
+
+input[type="search"] {
+    font-size: 30px;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px; rgba(0,0,0,0,2);
+    border: none;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+.button:disabled{
+    background-color: gray;
+    opacity: 0.5;
+    color: white;
+
+}
+
+.fancy_text::after{
+    content: " ";
+    display: inline-block;
+    border: 1px solid red;
+    width: 16px; 
+    height: 16px;
+    border-radius: 50%;
+
+}
+
+
+.fancy_text::first-letter{
+    font-size: 40px;
+    font-weight: 60px;
+    color: blueviolet;
+    
+}
+
+.file_picker::file-selector-button{
+    font-size: 15px;
+    background-color: purple;
+    color: white;
+}
+
