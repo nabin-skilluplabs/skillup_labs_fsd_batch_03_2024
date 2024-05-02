@@ -27,7 +27,7 @@ body {
   position: relative;
   background: radial-gradient(circle at 50% 120%, #323232, #0a0a0a 80%, #000000 100%);
   animation-name: rotate-ball, move-corners;
-  animation-duration: 3s;
+  animation-duration: s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   animation-fill-mode: forwards;
