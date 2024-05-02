@@ -1,0 +1,10 @@
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    transform: translate(50px,60px)
+
+}
+.box-1{
+    transform: translate(50px , 50px)
+}
