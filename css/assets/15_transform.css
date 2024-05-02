@@ -20,3 +20,9 @@
 .box2{
     transform: rotate(45deg);
 }
+.box-3:hover{
+    transform: scale(200%);
+}
+.box-4{
+    transform: skew(45deg);
+}
