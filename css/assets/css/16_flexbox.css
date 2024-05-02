@@ -4,12 +4,16 @@
     display: flex;
     padding: 20px;
     flex-direction: row;
+    height: 150vh;
     gap: 15px;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
 }
 .item{
     padding: 10px;
     box-sizing: border-box;
     background-color: beige;
-    width: calc(25% - (45px/4));
+    height: 200px;
+    /*width: calc(25% - (45px/4));*/
 }
