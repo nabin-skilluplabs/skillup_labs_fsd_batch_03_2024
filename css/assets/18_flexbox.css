@@ -35,7 +35,7 @@ h1 {
     box-sizing: border-box;
      
 }
-.service-container > div:nth-child(1)
+.service-container > div:nth-child(1),
 .service-container > div:nth-child(4) {
     background-color: black;
     color: white;
