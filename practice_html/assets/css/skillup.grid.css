@@ -10,5 +10,30 @@ body{
     color: white;
     display: flex;
     justify-content: center;
-    padding: 100px 0px;
+    padding: 100px 20px;
+}
+.inner-content{
+    max-width: 1024px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.inner-content h2{
+    font-size: 36px;
+    font-weight: bold;
+}
+.inner-content intro{
+    line-height: 1.6;
+
+}
+.curriculum-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, auto);
+    gap: 25px;
+
+}
+.curriculum-grid h3{
+    color: rgb(255, 204, 0);
+    
 }
