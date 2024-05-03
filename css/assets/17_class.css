@@ -33,7 +33,7 @@ h1{
 }
 .service-container > div{
     flex-basis: 50%;
-    padding: 25%;
+    padding: 25px;
     box-sizing: border-box;
 }
 .service-container > div:nth-child(1) ,

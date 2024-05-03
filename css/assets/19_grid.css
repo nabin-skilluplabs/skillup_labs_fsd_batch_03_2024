@@ -1,0 +1,40 @@
+ body{
+    
+ }
+ .grid-container{
+    display: grid;
+    grid-template-columns: [first-column]40px [second-column]50px [third-column]auto [fourth-column]50px [fifth-column]40px;
+    grid-template-rows: [first-row]25% [second-row]100px [third-row]auto;
+    height: 100vh;
+    grid-template-areas: 
+    "logo logo menu . contact"
+    "main main main sidebar sidebar"
+    "footer footer footer footer footer";
+}
+
+.logo{
+    background-color: aqua;
+    grid-area: logo;
+}
+
+.menu{
+    background-color: rgb(49, 105, 106);
+    grid-area: menu;
+}
+
+.contact{
+    background-color: red;
+    grid-area: contact;
+}
+.main{
+    background-color: gray;
+    grid-area: main;
+}
+.side-bar{
+    background-color: yellow;
+    grid-area: sidebar;
+}
+.footer{
+    background-color: blanchedalmond;
+    grid-area: footer;
+}
