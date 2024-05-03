@@ -1,0 +1,49 @@
+@import url('./reset.css');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+body {
+    font-family: Inter;
+    font-size: 15px;
+}
+
+.row-container {
+    background-color: #000;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 100px 20px;
+}
+
+.inner-container {
+    max-width: 1215px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+h2{
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.inner-container .intro {
+    line-height: 1.5;
+    font-size:15px;
+}
+
+.cirriculum-grid {
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    grid-template-rows: repeat(4 , auto);
+    gap: 25px;
+}
+
+.cirriculum-grid h3 {
+    color:#FFCC01;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.cirriculum-grid p {
+    line-height: 1.5;
+}
