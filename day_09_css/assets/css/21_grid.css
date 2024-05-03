@@ -1,0 +1,47 @@
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns:[first-line] 40px [second-line] 50px [fourth-line] auto [fifth-line] 50px [sixth-line] 40px;
+    grid-template-rows:[row-1] 25% [row-2] 100px [row-3] auto;
+    height: 100vh;
+    grid-template-areas: 
+        "logo logo menu . contact"
+        "main main main sidebar sidebar"
+        "footer footer footer footer footer"
+    ;
+    
+}
+
+.logo {
+
+    background-color: aqua;
+    color: black;
+    grid-area: logo;
+}
+
+.menu {
+    background-color: brown;
+    grid-area: menu;
+}
+
+.contact {
+    background-color: blueviolet;
+    grid-area: contact;
+}
+
+.main {
+    background-color: chartreuse;
+    grid-area: main;
+}
+
+
+.sidebar {
+    background-color: blue;
+    grid-area: sidebar;
+}
+
+.footer {
+    background-color: chocolate;
+    grid-area: footer;
+}
