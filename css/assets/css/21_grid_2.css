@@ -1,0 +1,32 @@
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(5, 100px);
+    grid-template-rows: repeat(5, 100px);
+    justify-items: center;
+    align-items: center;
+    background-color:aliceblue;
+    justify-content: center;
+    height: 100vh;
+    align-content: end;
+}
+
+.item{
+    width: 80px;
+    height: 80px;
+    border: 1px solid black;
+}
+.item1{
+    background-color: orange;
+    border-radius: 10px;
+    grid-area: 2 / 3 / 4 / 5;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    
+}
+.item15{
+    background-color: black;
+    border-radius:50% ;
+    grid-area: 3 / 4 / 4 / 5;
+}
+
