@@ -1,0 +1,102 @@
+@import url(reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+
+body{
+    font-family: sora;
+}
+p{
+    line-height: 1.4;
+}
+
+.contact-wrapper{
+    background-color: rgb(246, 253, 252);
+    padding: 60px 12px;
+}
+.contact-info{
+ display: flex;
+ flex-direction: column;
+}
+.contact-info-row{
+ display: flex;
+ gap: 20px;
+}
+.contact-icon{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-image: linear-gradient(161deg, rgb(42, 20, 84) 0%, rgb(135, 80, 247) 100%);
+    font-size: 20px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.contact-label{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+.contact-label .info{
+    font-size: 18px;
+    font-weight: 500;
+    color: rgb(42, 20, 84);
+
+}
+.contact-label .info a{
+    color: rgb(42, 20, 84);
+    text-decoration: none;
+}
+.contact-label .info a:hover{
+    color: rgb(135, 80, 247);
+}
+.contact-form{
+    background-color: white;
+    border-radius: 15px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.contact-form h2{
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(135, 80, 247);
+    background-image: linear-gradient(to right, rgb(135, 80, 247) 0%, rgb(42, 20, 84) 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 1.1;
+}
+.contact-form form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+input[type="text"], 
+input[type="email"], 
+input[type="phone"], 
+input[type="tel"], 
+textarea, 
+select
+{
+font-size: 16px;
+border: 1px solid rgb(42, 20, 84);
+border-radius: 8px;
+padding: 14px 20px;
+color: rgb(42red, 20, 84);
+}
+
+input[type="submit"]{
+    padding: 20px 30px;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 50px;
+    background-image: linear-gradient(to right, rgb(135, 80, 247) 0%, rgb(42, 20, 84) 100%);
+    border: none;
+    width: 500px;
+}
