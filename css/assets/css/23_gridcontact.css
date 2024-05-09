@@ -90,7 +90,7 @@ color: rgb(42red, 20, 84);
 }
 
 input[type="submit"]{
-    padding: 20px 30px;
+    padding: 20px 35px;
     cursor: pointer;
     color: white;
     font-weight: bold;
@@ -98,5 +98,5 @@ input[type="submit"]{
     border-radius: 50px;
     background-image: linear-gradient(to right, rgb(135, 80, 247) 0%, rgb(42, 20, 84) 100%);
     border: none;
-    width: 500px;
+    width: 200px;
 }
