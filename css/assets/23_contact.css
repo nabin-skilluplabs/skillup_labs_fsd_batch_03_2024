@@ -94,6 +94,7 @@ input[type="email"],
 input[type="tel"],
 textarea,
 select {
+    box-sizing: border-box;
     font-size: 16px;
     border: 1px solid rgb(42, 20, 84);
     border-radius: 8px;
@@ -111,4 +112,35 @@ input[type="submit"] {
     font-weight: bold;
     background-image: linear-gradient(to right, rgb(135, 80, 247) 0%, rgb(42, 20, 84) 100%);
     width: 200px;
+}
+@media  screen and (min-width:800px) {
+    
+    .content-wrapper {
+        
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+    
+    .contact-info,
+    .contact-form {
+      flex-basis: 50%;
+    }
+}
+
+@media  screen and (min-width:1000px) {
+        .contact-form form {
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+    .contact-form form input:nth-child(1)
+    .contact-form form input:nth-child(2)
+    .contact-form form input:nth-child(3)
+    .contact-form form input:nth-child(4) {
+          flex-basis: calc(50% - 5px);
+    }
+    .contact-form form select, 
+    .contact-form form textarea {
+        flex-basis: 100%;
+    }
 }
