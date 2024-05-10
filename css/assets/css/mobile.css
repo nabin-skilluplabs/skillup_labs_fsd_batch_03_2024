@@ -2,31 +2,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
 @import url(./reset.css);
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css);
-body{
-    font-family: "Sora" , sans-serif;
+
+body {
+    font-family: "Sora", sans-serif;
     font-size: 16px;
     color: rgb(20, 12, 28);
 }
-p{
+
+p {
     line-height: 1.4;
 }
 
-.contact-wrapper{
+.contact-wrapper {
     background-color: rgb(246, 243, 252);
     padding: 60px 12px;
+
 }
-.contact-info{
+
+.contact-info {
     display: flex;
     flex-direction: column;
 
+
 }
-.contact-info-row{
+
+.contact-info-row {
     display: flex;
     gap: 7px;
     margin-bottom: 40px;
 
 }
-.contact-icon{
+
+.contact-icon {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -36,68 +43,253 @@ p{
     background-image: linear-gradient(161deg, rgb(42, 20, 84) 0%, rgb(135, 80, 247) 100%);
     font-size: 20px;
     color: white;
+    margin-right: 20px;
 }
-.contact-label{
+
+.contact-label {
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 20px;
+    width: calc(100%-50px);
 
 }
-.contact-label .info{
+
+.contact-label .info {
     font-size: 18px;
     font-weight: 500;
     color: rgb(42, 20, 84);
-   
+
+    
+
 }
-.contact-label .info a{
-    color: rgb(42, 20, 84); 
+
+.contact-label .info a {
+    color: rgb(42, 20, 84);
     text-decoration: none;
+    
 }
-.contact-label .info a:hover{
+
+.contact-label .info a:hover {
     color: rgb(135, 80, 247);
 }
-.contact-form{
+
+.contact-form {
     background-color: white;
-    padding: 30px 15px ;
+    padding: 30px 15px;
     border-radius: 15px;
     display: flex;
     flex-direction: column;
     gap: 15px;
 
+
+
 }
-.contact-form h2{
+
+.contact-form h2 {
     font-size: 30px;
     font-weight: 900;
-    background-image: linear-gradient(to right,rgb(135, 80, 247) 0% , rgb(42, 20, 84) 100% );
+    background-image: linear-gradient(to right, rgb(135, 80, 247) 0%, rgb(42, 20, 84) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-repeat: repeat;
     line-height: 1.1;
 
 }
-.contact-form form{
+
+.contact-form form {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    justify-content: center;
 }
+
 input[type="text"],
 input[type="email"],
-input[type="tel"],textarea,select{
-    border: 1px solid rgb(42, 20, 84)k;
-   border-radius: 8px;
-   padding:  14px 20px;
+input[type="tel"],
+textarea,
+select {
+    border: 1px solid rgb(42, 20, 84);
+    border-radius: 8px;
+    padding: 14px 20px;
 
 }
-input[type="submit"]{
+
+input[type="submit"] {
     padding: 20px 35px;
     cursor: pointer;
     color: white;
     font-weight: bold;
     font-size: 15px;
     border-radius: 50px;
-    background-image: linear-gradient(to right,rgb(135, 80, 247) 0% , rgb(42, 20, 84) 100% );
+    background-image: linear-gradient(to right, rgb(135, 80, 247) 0%, rgb(42, 20, 84) 100%);
     border: none;
-    width: 200px ;
+    width: 200px;
+}
 
+@media screen and (min-width:800px) {
+    .contact-inner {
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 50px;
+        align-items: center;
+
+    }
+
+    .contact-info,
+    .contact-form {
+        flex-basis: 50%;
+        box-sizing: border-box;
+    }
+
+    .contact-form {
+        display: flex;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"] {
+        display: flex;
+        flex-basis: 50%;
+        gap: 10px;
+
+    }
 
 }
+
+@media screen and (min-width:1000px) {
+
+    .contact-form form {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+
+
+
+    }
+
+    .contact-form form input:nth-child(1),
+    .contact-form form input:nth-child(2),
+    .contact-form form input:nth-child(3),
+    .contact-form form input:nth-child(4) {
+
+        display: flex;
+        flex-basis: calc(50% - 5px);
+        box-sizing: border-box;
+        gap: 10px;
+        flex-direction: row;
+
+
+    }
+
+    .contact-form form select,
+    .contact-form form textarea {
+        flex-basis: 100%;
+
+    }
+
+}
+
+@media screen and (min-width:1200px) {
+    .page-wrapper {
+        display: flex;
+        justify-content: center;
+       
+    }
+    .page-inner{
+        max-width: 1200px;
+        width: 100%;
+
+       
+    }
+    .contact-label .info{
+        width: 250px;
+    }
+}
+.header-wrapper{
+    padding: 15px 0;
+    font-size: 15px;
+    font-weight: 500;
+}
+.header-inner{
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+.header-inner a{
+    text-decoration: none;
+    color: #2A1454;
+}
+.header-inner a:hover{
+    color: rgb(135, 80, 247);
+}
+.header-inner nav{
+    flex-grow: 2;
+}
+
+.header-inner nav ul{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: flex-end;
+ }
+ .header-inner nav ul a{
+    display: inline-block;
+    padding: 15px 0;
+    position: relative;
+ }
+ .header-inner nav ul a span{
+    display: inline-block;
+    height: 2px;
+    width: 0;
+    margin-top: 4px;
+    background-image:linear-gradient(to right, rgb(135, 80, 247) 0%, rgb(42, 20, 84) 100%); 
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    transition-property: width;
+    transition-duration: 100ms;
+    transition-timing-function: linear, ease-in-out;
+ }
+ .header-inner nav ul a:hover span{
+    width: 100%;
+ }
+ .header-inner nav ul a:hover{
+    color: #2A1454;
+ }
+ .header-inner img{
+    width: 60px;
+    height: 60px;
+ }
+ a.header-btn{
+    display: inline-block;
+    background-image:linear-gradient(to right, rgb(135, 80, 247) 0%, rgb(42, 20, 84) 100%); 
+    padding: 17px 35px;
+    border-radius: 50px;
+    color: white;
+ }
+ a.header-btn:hover{
+    color: white;
+    background-image:linear-gradient(to right, rgb(135, 80, 247) 0%, rgb(42, 20, 84) 100%); 
+    transition: 0.5s;
+ }
+ .hamburger-menu{
+    display: none;
+ }
+ @media screen and(max-width:990px) {
+    .header-inner nav{
+        display: none;
+    }
+    .hamburger-menu{
+        display: block;
+        border: none;
+        background-color: none;
+        font-size: 30px;
+        color: rgb(135, 80, 247);
+
+    }
+    header-mail{
+        flex-grow: 2;
+    }
+    
+ }
