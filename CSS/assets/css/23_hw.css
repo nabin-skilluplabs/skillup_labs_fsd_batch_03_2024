@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+body{
+    font-family: inter;
+}
+
+.section1{
+
+    background-color:black;
+    height: 82vh;
+    background-image: url(../img/hero_banner.png);
+}
+.header{
+   
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(5,50px);
+    float: right;
+    column-gap: 50px;
+    padding: 50px;
+}
+
+
+
+.section2{
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 70vh;
+    display: flex;
+
+}
+.img{
+    width: 400px;
+    padding-left: 200px;
+    height: 60vh;
+    
+    padding-top: 60px;
+
+}
+.about{
+    width: 300px;
+    font-size: larger;
+    padding-top: 50px;
+    
+}
+
+.section3{
+    background-color:rgb(229, 247, 247);
+     height: 100vh;
+    padding-top: 50px;
+    padding-left: 100px;
+    
+
+    
+}
+.section3 > h1{
+    padding-top: 10px;
+    padding-left: 100px;
+}
+.contents{
+    background-color:rgb(229, 247, 247);
+    height: ;
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+     
+    
+}
+
+.items{
+    background-color:rgb(55, 199, 191);
+    color: white;
+    height: 550px;
+}
