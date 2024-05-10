@@ -39,7 +39,7 @@ body {
 @media screen and (max-width: 630px) {
     .inner-wrapper {
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: repeat(4, 161px);
+        grid-template-rows: repeat(3, 161px);
     }
 
     .inner-wrapper img {
