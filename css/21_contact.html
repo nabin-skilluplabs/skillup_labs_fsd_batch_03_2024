@@ -1,76 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
     <link rel="stylesheet" href="./assets/CSS/21_contact.css">
 </head>
-
 <body>
+    
     <div class="contact-wrapper">
         <div class="contact-info">
+
             <div class="contact-info-row">
                 <div class="contact-icon">
                     <i class="fa-solid fa-phone-volume"></i>
                 </div>
-                <div class="contact-level">
+                <div class="contact-label">
                     <div class="label">Phone</div>
-                    <div class="info"><a href="tel: +61 410379153">0410379153</a></div>
+                    <div class="info"><a href="tel:+61 0420344567">+61 0420344567</a></div>
                 </div>
-                </div>
-                <div class="contact-info-row">
-                    <div class="contact-icon">
-                        <i class="fa-regular fa-envelope"></i>
-                    </div>
-                    <div class="email-level">
-                        <div class="label">Email</div>
-                        <div class="email"><a href="mailto">sandhyaaryal777@gmail.com</a></div>
-                    </div>
-                </div>
-                <div class="contact-info-row">
-
-                    <div class="contact-icon">
-                        <i class="fa-solid fa-location-dot"></i>
-
-                    </div>
-
-                    <div class="adress-level">
-                        <div class="label">Address</div>
-                        <div class="address">
-                            <address>1/330 Military Rd, Cremorne</address>
-                        </div>
-                        </div>
             </div>
+
+            <div class="contact-info-row">
+                <div class="contact-icon">
+                    <i class="fa-regular fa-envelope"></i>
+                </div>
+                <div class="contact-label">
+                    <div class="label">Email</div>
+                    <div class="info"><a href="mailto:nabin@skilluplabs.com.au">nabin@skilluplabs.com.au</a></div>
+                </div>
+            </div>
+
+
+            <div class="contact-info-row">
+                <div class="contact-icon">
+                    <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div class="contact-label">
+                    <div class="label">Address</div>
+                    <div class="info"><address>27 Chetwynd Rd, Merrylands 2160</address></div>
+                </div>
+            </div>
+
+
         </div>
-    </div>
-    <div class="contact-form">
 
-        <h2> Let's work together!</h2>
-        <p>I design and code beautifully simple things and i love what i do. Just simple like</p>
-        <form action="">
-            <input type="text" placeholder="First Name" name="firstname" id="firstname">
-            <input type="text" placeholder="Last Name">
-            <input type="email" placeholder="Email Address">
-            <input type="tel" placeholder="Phone Number">
-            <select id="services" name="services">
-                <option value="" selected>Choose Service</option>
-                <option value="Branding Design">Branding Design</option>
-                <option value="Web Design">Web Design</option>
-                <option value="UI/UX design">UI/UX design</option>
-                <option value="">App Design</option>
+        <div class="contact-form">
+            <h2>Let's work together!</h2>
+            <p>I design and code beautifully simple things and i love what i do. Just simple like            </p>
+            <form action="">
+                <input type="text" placeholder="First name" name="firsName" id="firstName">
+                <input type="text" placeholder="Last name" name="lastName" id="lastName">
+                <input type="email" placeholder="Email address" name="emailAddress" id="emailAddress">
+                <input type="tel" placeholder="Phone number" name="phoneNumber" id="phoneNumber">
+                <select id="services" name="services">
+                    <option value="" selected>Choose Service</option>
+                    <option value="Branding Design">Branding Design</option>
+                    <option value="Web Design">Web Design</option>
+                    <option value="UI/UX Design">UI/UX Design</option>
+                    <option value="App Design">App Design</option>
+                </select>
+                <textarea id="message" name="message" placeholder="Message"></textarea>
+                <input type="submit" value="Send Message">
+            </form>
+        </div>
 
-            </select>
-            <input type="submit" value="Send Message">
-
-        </form>
-
-
-    </div>
 
     </div>
 
 </body>
-
 </html>
