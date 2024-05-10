@@ -1,0 +1,36 @@
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(5, 100px);
+    grid-template-rows: repeat(5, 100px);
+    justify-items: center;
+    align-items: center;
+    background-color: gray;
+    height: 100vh;
+    justify-content: center;
+   align-content: center;
+}
+
+
+.item {
+    width: 80px;
+    height: 80px;
+    border: 1px solid black;
+}
+
+.item1 {
+
+    background-color: blue;
+    border-radius: 50%;
+    grid-area: 2 / 3 / 4 / 5;
+    height: auto;
+    width: auto;
+}
+
+
+.item15 {
+    background-color: red;
+    border-radius: 50%;
+    grid-area: 3 / 4 / 4 / 5 ;
+}
+

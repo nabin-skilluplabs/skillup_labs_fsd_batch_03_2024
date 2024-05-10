@@ -1,0 +1,117 @@
+@import url(./reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+.topic {
+    background-image: url(../image/hero_banner.png);
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+} 
+
+.topic a {
+    margin-left: 25px;
+    text-decoration: none;
+    color: white;
+}
+
+.aboutme {
+    padding: 100px 60px;
+    display: flex;
+   
+}
+
+.info h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    
+}
+
+.info p {
+    font-size: 16px;
+    width: 500px;
+}
+.image-container {
+    
+    flex: 0 0 auto; 
+    margin-right: 35px; 
+}
+
+.info {
+    padding: 50px;
+    flex: 1; 
+}
+
+.info h2 {
+    font-size: 32px;
+}
+
+.info p {
+    font-size: 20px;
+    line-height: 2;
+}
+
+.box-container {
+    display: flex;
+    flex-direction: row;
+    background-color: #E5F8F7;
+    width: 1000;
+    height:400px;
+    text-align: left;
+    padding: 40px 20px;
+
+}
+
+.portfolio-heading {
+    font-size: 36px;
+    font-weight: bold;
+
+}
+
+.box {
+    margin-right: 20px;
+}
+
+.box-content {
+    background-color: #36C7BF;
+    color: white;
+    height: 130px;
+}
+
+.box-content h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.box-content p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+.service-container {
+    background-color: white;
+    color: black;
+    width: 500px;
+    height: 200px;
+    padding: 60px;
+    line-height: 1.5;
+
+}
+.lineone {
+    margin-bottom: 20px;
+}
+.lineone h3 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.lineone p{
+    font-size: 11px;
+
+}
+
+.linetwo {
+    font-size: 18px;
+
+}
