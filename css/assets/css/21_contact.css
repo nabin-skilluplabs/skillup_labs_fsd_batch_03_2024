@@ -9,23 +9,23 @@ body {
     color: rgb(20, 12, 28);
 }
 
-.contact-wrapper {
+.contact-wrapper{
     background-color: rgb(246, 243, 252);
     padding: 60px 12px;
 }
 
-.contact-info {
+.contact-info{
     display: flex;
     flex-direction: column;
 
 }
 
-.contact-info-row {
+.contact-info-row{
     display: flex;
     gap: 20px;
 }
 
-.contact-icon {
+.contact-icon{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -38,28 +38,28 @@ body {
 
 }
 
-.contact-label {
+.contact-label{
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-.contact-label .info {
+.contact-label .info{
     font-size: 18px;
     font-weight: 500;
     color: rgb(42, 20, 84);
 }
 
-.contact-label .info .a {
+.contact-label .info .a{
     color: rgb(42, 20, 84);
     text-decoration: none;
 }
 
-.contact-label .info .a:hover {
+.contact-label .info .a:hover{
     color: rgb(135, 80, 247)
 }
 
-.contact-form {
+.contact-form{
     background-color: white;
     padding: 30px 15px;
     border-radius: 15px;
@@ -68,7 +68,7 @@ body {
     gap: 10px;
 }
 
-.contact-form h2 {
+.contact-form h2{
     font-size: 30px;
     font-weight: bold;
     background-image: linear-gradient(to right, rgb(42, 20, 84) 100%, rgb(135, 80, 247)0%);
@@ -77,7 +77,7 @@ body {
     line-height: 1.1;
     -webkit-text-fill-color: transparent;
 }
-    .contact-form form {
+    .contact-form form{
         display: flex;
         flex-direction: column;
         gap: 10px;     
@@ -91,14 +91,14 @@ body {
     
     textarea 
     {
-border: 1px solid rgb(42, 20, 84)k;
+border: 1px solid rgb(42, 20, 84);
 border-radius: 8px;
 padding: 14px 20px;
 color: rgb(42, 20, 84)
 
     }
 
-    input[type="submit"] {
+    input[type="submit"]{
         padding: 20px 35px;
         cursor: pointer;
         border-radius: 50px;
