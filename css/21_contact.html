@@ -1,38 +1,61 @@
-\'
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contact</title>
     <link rel="stylesheet" href="assets/css/21_contact.css">
 </head>
 
 <body>
-    <div class="contact-wrapper">
-        <div class="contact-info">
-            <div class="contact-info-row">
-                <div class="contact-icon">
-                    <i class="fa-solid fa-phone-volume"></i>
-                </div>
-                <div class="contact-label">
-                    <div class="label">Phone</div>
-                    <div class="info"><a href="tel:+61 0420344567">+61 0420344567</a>
-                    </div>
+    <header class="header-wrapper page-wrapper">
+        <div class="header-inner page-inner">
+            <a href="/">
+                <img src="https://themejunction.net/html/gerold/demo/assets/img/logo/logo-dark.png" alt="">
+            </a>
+            <a href="mailto:mailmail@mail.yahoo.com" class="header-mail">mailmail@mail.yahoo.com</a>
+            <nav>
 
+                <ul>
+                    <li><a href="#">Services<span></span> </a></li>
+                    <li><a href="#">Works<span></span></a></li>
+                    <li><a href="#">Resume<span></span></a></li>
+                    <li><a href="#">Skills<span></span></a></li>
+                    <li><a href="#">Testimonials<span></span></a></li>
+                    <li><a href="#">Contact <span></span></a></li>
+                </ul>
+            </nav>
+            <a href="#" class="header-btn">Hire Me</a>
+
+            <button class="hamburger"><i class="fa-solid fa-bars"></i></button>
+        </div>
+    </header>
+    <div class="contact-wrapper page-wrapper">
+        <div class="contact-inner page-inner">
+            <div class="contact-info">
+
+                <div class="contact-info-row">
+                    <div class="contact-icon">
+                        <i class="fa-solid fa-phone-volume"></i>
+                    </div>
+                    <div class="contact-label">
+                        <div class="label">Phone</div>
+                        <div class="info"><a href="tel:+61 0420344567">+61 0420344567</a></div>
+                    </div>
                 </div>
-            </div>    
+
                 <div class="contact-info-row">
                     <div class="contact-icon">
                         <i class="fa-regular fa-envelope"></i>
                     </div>
                     <div class="contact-label">
                         <div class="label">Email</div>
-                        <div class="info"><a href="mailto:adhikarisharad2234@yahoo.com">adhikarisharad2234@yahoo.com</a>
-                        </div>
+                        <div class="info"><a href="mailto:nabin@skilluplabs.com.au">nabin@skilluplabs.com.au</a></div>
                     </div>
                 </div>
+
+
                 <div class="contact-info-row">
                     <div class="contact-icon">
                         <i class="fa-solid fa-location-dot"></i>
@@ -40,35 +63,37 @@
                     <div class="contact-label">
                         <div class="label">Address</div>
                         <div class="info">
-                            <address>27 Chetwynd Rd, Merrylands, 2160, NSW, Australia</address>
+                            <address>27 Chetwynd Rd, Merrylands 2160</address>
                         </div>
                     </div>
                 </div>
+
+
+            </div>
+
+            <div class="contact-form">
+                <h2>Let's work together!</h2>
+                <p>I design and code beautifully simple things and i love what i do. Just simple like </p>
+                <form action="">
+                    <input type="text" placeholder="First name" name="firsName" id="firstName">
+                    <input type="text" placeholder="Last name" name="lastName" id="lastName">
+                    <input type="email" placeholder="Email address" name="emailAddress" id="emailAddress">
+                    <input type="tel" placeholder="Phone number" name="phoneNumber" id="phoneNumber">
+                    <select id="services" name="services">
+                        <option value="" selected>Choose Service</option>
+                        <option value="Branding Design">Branding Design</option>
+                        <option value="Web Design">Web Design</option>
+                        <option value="UI/UX Design">UI/UX Design</option>
+                        <option value="App Design">App Design</option>
+                    </select>
+                    <textarea id="message" name="message" placeholder="Message"></textarea>
+                    <input type="submit" value="Send Message">
+                </form>
             </div>
         </div>
-        <div class="contact-form">
-            <h2>Let's Work Together</h2>
-            <p>I design and code beautifully simple things and i love what i do. Just simple like</p>
-            <form action="">
-                <input type="text" name="fName" placeholder="First Name" id="First Name">
-                <input type="text" name="lName" placeholder="Last Name" id="Last Name">
-                <input type="email" name="email" placeholder="email" id="email">
-                <input type="text" name="pNumber" placeholder="Phone Number" id="Phone Number">
-                <select name="services" id="services">
-                    <option value="" selected>Choose Service</option>
-                    <option value="Branding Degisn" selected>Branding Degisn</option>
-                    <option value="Web Design" selected>Web Design</option>
-                    <option value="UI/UX" selected>UI/UX</option>
-                    <option value="App Design" selected>App Design</option>
 
-                </select>
-                <textarea name="message" id="message" placeholder="message"></textarea>
-                <input type="submit" value="Send Message">
-
-
-            </form>
-        </div>
     </div>
+
 </body>
 
 </html>
