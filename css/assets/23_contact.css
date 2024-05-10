@@ -1,0 +1,114 @@
+@import url('./reset.css');
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css);
+
+body{
+    font-family: Sora, sans-serif;
+    font-size: 16px;
+}
+
+p {
+    line-height: 1.4;
+}
+.content-wrapper{
+    background-color: rgb(246, 243, 252);
+    padding: 60px 12px;
+}
+
+.contact-info{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.contact-info-row{
+    display: flex;
+    gap: 20px;
+}
+
+.contact-icon{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-image: linear-gradient(161deg, rgb(42, 20, 84) 0%, rgb(135, 80, 247) 100%);
+    font-size: 20px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.contact-label{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-label .info {
+    font-size: 18px;
+    font-weight: 500;
+    color: rgb(42, 20, 84);
+}
+
+.contact-label .info a {
+    color:rgb(42, 20, 84) ;
+    text-decoration: none;
+
+}
+
+.contact-label .info a:hover {
+    color: rgb(135, 80, 247);
+}
+.contact-label .info address:hover {
+    color: rgb(135, 80, 247);
+}
+
+.contact-form {
+    background-color: white;
+    border-radius: 15px;
+    padding: 30px 15px ;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+}
+
+.contact-form h2{
+    font-size: 30px;
+    font-weight: bold;
+    background-image:linear-gradient(to right, rgb(135, 80, 247) 0%, rgb(42, 20, 84) 100%); ;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 1.1;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input[type="text"], 
+input[type="email"],
+input[type="tel"],
+textarea,
+select {
+    font-size: 16px;
+    border: 1px solid rgb(42, 20, 84);
+    border-radius: 8px;
+    padding: 20px 14px;
+    columns: rgb(42, 20, 84);
+}
+
+input[type="submit"] {
+    padding: 20px 35px;
+    cursor: pointer;
+    color: white;
+    border-radius: 50px;
+    border: none;
+    font-size:15px ;
+    font-weight: bold;
+    background-image: linear-gradient(to right, rgb(135, 80, 247) 0%, rgb(42, 20, 84) 100%);
+    width: 200px;
+}

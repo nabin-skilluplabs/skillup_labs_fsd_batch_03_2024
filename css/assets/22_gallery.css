@@ -34,7 +34,7 @@ body{
     grid-area: 2 / 3 / 4 / 4;
 }
 
-@media screen and (max-width: 630px){
+@media screen and (max-width: 720px){
     .inner-wrapper{
         grid-template-columns: 1fr 1fr;
         grid-template-rows: repeat(4, 161px);
