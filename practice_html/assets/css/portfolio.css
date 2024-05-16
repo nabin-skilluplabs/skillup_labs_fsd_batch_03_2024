@@ -1,0 +1,69 @@
+@import url('./reset.css');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css');
+
+body{
+    
+    background-color: #252627;
+    font-family: "Sora", sans-serif;
+    color:  rgb(2, 12, 28);;
+
+}
+.header-wrapper{
+    padding: 15px 0px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.icon{
+    width: 60px;
+    padding: 10px;
+    
+}
+.mailto{
+    
+    text-decoration: none;
+    color: blue;
+
+}
+nav li{
+text-decoration: none;
+}
+.header-inner nav{
+    flex-grow: 2;
+}
+.header-inner a{
+    color: #2A1454;
+    text-decoration: none;
+}
+.header-inner a:hover{
+    color: rgb(135, 80, 247);
+
+}
+
+.header-inner nav ul{
+    display: flex;
+    justify-content: flex-end;
+    gap: 25px;   
+}
+.header-inner nav ul a{
+    display: block;
+    padding: 15px 0;
+    position: relative;}
+
+.header-inner nav ul a span{
+    display: inline-block;
+    background-image: linear-gradient(to right, rgb(135, 80, 247)0%, rgb(42, 20, 84)100% );
+    height: 2px;
+    position: relative;
+    margin-top: 3px;
+    left: 0;
+    bottom: 10px;
+    transition: transform 0.3s ease-in-out , -webkit-transform 0.3s ease-in-out;
+    transform: scale(1);
+    transform-origin: left;
+    }
+    .header-inner nav ul a span:hover{
+        ]color: #2A1454;
+    }
