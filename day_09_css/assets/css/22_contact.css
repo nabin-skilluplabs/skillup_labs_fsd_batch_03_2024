@@ -10,8 +10,108 @@ body {
 
 }
 
+.header-wrapper {
+    padding: 15px 0px;
+    font-size: 15px;
+    font-weight: 50px;
+}
+
+.header-inner {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+   
+}
+
+.header-inner a{
+    color: #2A1454;
+    text-decoration: none;
+}
+
+.header-inner a:hover {
+    color:rgb(135, 80, 247) ;
+    
+}
+.header-inner nav {
+    flex-grow: 2;
+}
+ .header-inner nav ul {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    padding: 15px 0px;
+ 
+ }
+ .header-inner nav ul a{
+    display: inline-block;
+    padding: 15px 0;
+    position: relative;
+ }
+
+ .header-inner nav ul a span {
+    display: inline-block;
+    height: 2px;
+    width: 0;
+    margin-top: 30px;
+    background-image:linear-gradient(161deg, rgb(42, 20, 84) 0%, rgb(135, 80, 247) 100%) ;
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    transform-origin: left;
+    transform: scale(0);
+    transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+   
+
+ }
+
+ .header-inner nav ul a :hover span {
+    width: 100%;
+    transform: scale(1);
+
+ }
+
+ .header-inner nav ul a:hover {
+    color: #2A1454;;
+ }
+
+ .header-inner img {
+    width: 60px;
+    height: 60px;
+ }
+
+a.header-btn {
+    display: inline-block;
+    background-color:linear-gradient(161deg, rgb(42, 20, 84) 0%, rgb(135, 80, 247) 100%) ;
+    color: white;
+    padding: 70px 45px;
+    border-radius: 50px;
+    
+}
+
+a.header-btn:hover {
+    color: white;
+    transition: 0.4s;
+    background-color:linear-gradient(161deg, rgb(42, 20, 84) 0%, rgb(135, 80, 247) 100%) ;
+
+}
+.hamburger-menu{
+    display: none;
+}
+
+.introduction-about-me {
+   display: flex;
+}
+
+.introduction-about-me h2 {
+    font-size: 32px;
+}
+
+
+
+
+
 p {
-    line-height: 1.5;
+    line-height: 1.4;
 }
 .contact-wrapper {
     background-color: rgb(246, 243, 252);
@@ -28,6 +128,7 @@ p {
     display: flex;
     gap: 20px;
     margin-bottom: 40px;
+   
 
 }
 
@@ -46,7 +147,9 @@ p {
 .contact-label {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
+    width: calc(100%-50px);
+
 }
 
 .contact-label .info {
@@ -76,17 +179,20 @@ p {
 
 .contact-form h2 {
     font-size: 30px;
-    font-weight: bold;
-    background-image:linear-gradient(to right, rgb(135, 80, 247) 0%, rgb(42, 20, 84) 100%);
+    font-weight: 900;
+    background-image: linear-gradient(to right, rgb(135, 80, 247) 0%, rgb(42, 20, 84) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    background-repeat: repeat;
     line-height: 1.1;
+
 }
 
 .contact-form form {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    justify-content: center;
 }
 
 input[type="text"],
@@ -119,7 +225,7 @@ input[type="submit"]{
 }
 
 @media screen and (min-width:800px) {
-    .contact-wrapper{
+    .contact-inner{
         display: flex;
         flex-direction: row-reverse;
         gap: 50px;
@@ -128,19 +234,33 @@ input[type="submit"]{
     .contact-info,
     .contact-form {
         flex-basis:50% ;
+        box-sizing: border-box;
+        
+    }
+    .contact-form {
+        display: flex;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"] {
+        display: flex;
+        flex-basis: 50%;
+        gap: 10px;
+
+    }
+
+}
+
+@media screen and (min-width:1070px){
+    .contact-form form { 
+        flex-direction: row;
+        flex-wrap: wrap;
         
     }
 }
 
-@media screen and (min-width:1000px){
-    .contact-form form { 
-        flex-direction: row;
-        flex-wrap: wrap;
-        display: flex;
-    }
-}
-
-@media screen and (min-width:1000px){
+@media screen and (min-width:1070px){
     .contact-form form input:nth-child(1),
     .contact-form form input:nth-child(2),
     .contact-form form input:nth-child(3),
@@ -155,4 +275,58 @@ input[type="submit"]{
 .contact-form form textarea {
     flex-basis: 100%;
 
+}
+
+@media screen and (min-width:1200px) {
+    .page-wrapper {
+        display: flex;
+        justify-content: center;
+
+    }
+    .page-inner {
+        max-width: 1200px;
+        width: 100%;
+
+    }
+    .contact-label .info{
+        width: 250px;
+    }
+}
+
+@media screen and (max-width:990px) {
+    .header-inner nav {
+        display: none;
+        position: absolute;
+        background-color: rgb(42, 20, 84);
+        top: 94px;
+        left: 0px;
+        right: 0px;
+    }
+    .header-inner nav ul{
+        flex-direction: column;
+
+    }
+    .header-inner nav ul li a{
+        color: white;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 25px;
+    }
+    .header-inner nav ul li a:hover span{
+        display: none;
+    }
+    .header-inner nav ul li a:hover{
+        color: white;
+    }
+    
+    .hamburger-menu {
+        display: block;
+        border: none;
+        background: none;
+        font-size: 30px;
+        color: rgb(135, 80, 247);
+    }
+    .header-mail{
+        flex-grow: 2;
+    }
 }
