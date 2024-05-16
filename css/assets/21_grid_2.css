@@ -1,0 +1,68 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(5, 100px);
+    grid-template-rows: repeat(5, 100px);
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    align-content: end;
+    background-color: teal;
+
+    
+}
+.item {
+    width: 80px;
+    height: 80px;
+    border: 1px solid black;
+
+
+}
+.item1 {
+    background-color: blue;
+    border-radius: 50%;
+    grid-area: 2 / 3 / 4 / 5;
+    width: 200px;
+    height: 200px;
+
+}
+.item2 {
+    background-color: red;
+    border-radius: 50%;
+    grid-area: 3 / 4 / 4 / 5;
+    animation-name: animate-box;
+    animation-duration:200ms;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+}
+@keyframes animate-box {
+    from {
+        grid-area: 2 / 3 / 4 / 5;
+        25%
+
+    }
+    from {
+        grid-area: 2 / 3 / 3 / 4;
+        50%
+
+
+
+
+    }
+    from {
+        grid-area: 2 / 4 / 3 / 4;
+        75%
+
+
+
+    }
+    from {
+        grid-area: 2 / 4 / 3 / 4;
+        100%
+
+
+
+    }
+
+    
+}
