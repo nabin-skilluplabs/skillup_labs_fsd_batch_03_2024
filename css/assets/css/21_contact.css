@@ -255,7 +255,13 @@ a.header-btn:hover {
 }
 
 .hamburger {
-    display: none;
+    /*display: none;*/
+    position: absolute;
+    background-color: rgb(42, 20, 84);
+    top: 94px;
+    left: 0px;
+    right: 0px;
+    
     
 
 }
