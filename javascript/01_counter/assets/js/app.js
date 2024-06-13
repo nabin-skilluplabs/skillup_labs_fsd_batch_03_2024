@@ -1,19 +1,40 @@
 document.querySelector('.counter-wrapper').classList.add('round-box');
 
 let counter = 0;
-
-
-
 document.getElementById("plus").addEventListener('click', addCounter);
+document.getElementById("minus").addEventListener('click', subCounter);
+document.getElementById("reset").addEventListener('click', resetCounter);
+
 
 function addCounter() {
-    counter = counter + 1;
+    const newValue = counter + parseInt(getStep());
+    if(newValue >  getMax()) {
+        const errorMessage =  `Counter value cannot be more than max value ${getMax()}`;
+        document.querySelector('.error-message').innerHTML = errorMessage;
+    }
+    else {
+        counter = newValue;
+        document.querySelector('.result').innerHTML = counter;
+    }
+    
+}
+
+function subCounter() {
+    counter = counter - parseInt(getStep());
+    document.querySelector('.result').innerHTML = counter;
+    document.querySelector('.error-message').innerHTML = '';
+}
+
+function resetCounter() {
+    counter = 0;
     document.querySelector('.result').innerHTML = counter;
 }
 
-document.getElementById("minus").addEventListener('click', subCounter);
+function getStep() {
+    const step = document.getElementById("stepBy").value;
+    return step
+}
 
-function subCounter() {
-    counter = counter - 1;
-    document.querySelector('.result').innerHTML = counter;
+function getMax() {
+    return document.getElementById("max").value;
 }
