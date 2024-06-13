@@ -11,9 +11,24 @@
 
 <body>
     <div class="counter-wrapper">
+        <div class="counter-form">
+            <div>
+            <label>Step by</label>
+            <input type="number" name="stepBy" id="stepBy" value="1">
+        </div>
+        <div>
+            <label>Max value</label>
+            <input type="number" name="max" id="max" value="100">
+        </div>
+        </div>
+        <div class="error-message"></div>
+
         <div class="buttons">
             <button id="plus">
                 +
+            </button>
+            <button id="reset">
+                Reset
             </button>
             <button id="minus">
                 -
