@@ -34,7 +34,7 @@ button {
   border: 1px solid #000;
   padding: 10px;
   border-radius: 10px;
-  background-color: white;
+  background-color: aliceblue;
 }
 .counter-form {
   display: flex;
