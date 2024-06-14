@@ -21,6 +21,7 @@ function addcounter() {
 function subcounter(){
     counter = counter - parseInt(getstep());
     document.querySelector('.result').innerHTML = counter;
+    document.querySelector('.error-message').innerHTML = '';
 }
 
 function resetcounter(){
