@@ -40,3 +40,4 @@ console.log(window.document);
 //both of them are same define that have same result
 
 console.log(globalThis.document)
+
