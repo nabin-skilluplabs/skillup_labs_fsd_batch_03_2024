@@ -25,7 +25,7 @@ console.log(address)
 // Try to reassign different values to adress constant
 //collegeName = 'KOI'
 //address = 'Cremorne'
-//console.log(collegeName)
+//console.log(collegeName)(Var can be hoitable and let and constant cant be hoitable)
 //console.log(address)
 
 function sayHello() {

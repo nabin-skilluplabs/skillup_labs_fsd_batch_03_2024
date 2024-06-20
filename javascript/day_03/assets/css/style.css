@@ -1,0 +1,33 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.calculator {
+    width: 365px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 70px repeat(4, 35px );
+    gap: 10px;
+}
+
+.display {
+    grid-area: 1 / 1 / 2 / 5; /*row start column start row end columnn end*/
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+
+button {
+    border: none;
+    font-size: 12px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.equals {
+    background-color: #23A5E6;
+
+}
+
+
