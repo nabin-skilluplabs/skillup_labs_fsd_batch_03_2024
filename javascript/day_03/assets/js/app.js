@@ -9,32 +9,37 @@ buttons.forEach(button => {
 let calculateExp = '';
 function handleClick(event) {
     const value = event.target.innerText;
-    if(value === "=") {
-        try {
-            calculateExp = eval(calculateExp);
-        }
-        catch {
+    switch(value) {
+        case "=":
+            try {
+                calculateExp = eval(calculateExp);
+            }
+            catch {
+                calculateExp = '';
+                // alert('Invalid calculation, please refresh and try again!');
+            }
+            break;
+        case 'CE':
             calculateExp = '';
-            // alert('Invalid calculation, please refresh and try again!');
-        }
-    }
-    else if (value === 'CE') {
-        calculateExp = '';
-    }
-    else if(value === 'DEL') {
-        calculateExp = calculateExp.slice(0, calculateExp.length - 1);
-    }
-    else if((value === '+') || (value === '-') || (value === '*') || (value === '/')) {
-        const lastValue = calculateExp[calculateExp.length - 1];
-        if(parseInt(lastValue) == lastValue) {
+            break;
+        case 'DEL':
+            calculateExp = calculateExp.slice(0, calculateExp.length - 1);
+            break;
+        case '+':
+        case '-':
+        case '*':
+        case '/':
+            const lastValue = calculateExp[calculateExp.length - 1];
+            if(parseInt(lastValue) == lastValue) {
+                calculateExp = calculateExp + value;
+            }
+            else {
+                calculateExp = calculateExp.slice(0, calculateExp.length - 1) + value;
+            }
+            break;
+        default: 
             calculateExp = calculateExp + value;
-        }
-        else {
-            calculateExp = calculateExp.slice(0, calculateExp.length - 1) + value;
-        }
     }
-    else {
-        calculateExp = calculateExp + value;
-    }
+
     document.querySelector('.display').innerText = calculateExp;
 }
