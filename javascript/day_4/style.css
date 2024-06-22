@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+body{
+    font-family: 'Inter', sans-serif;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+.outer-body{
+    display: flex;
+    flex-direction: column;
+    flex-basis: auto;
+    align-items: center;
+    justify-content: center;
+    margin: 120px;
+    border: 2px solid #000;
+    border-radius: 5px;
+    background-color: #f0d1d1;
+    padding-top: 50px;
+}
+.inner-body{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+.inner-body h1{
+    font-size: 36px;
+    font-weight: 700;
+    margin: 0;
+}
+.form-type{
+    width: auto;
+    height: auto;
+    margin-bottom: 20px;
+    align-items: center;
+    display: flex;
+    gap: 10px;
+}
+.form-type input{
+    font-size: 20px;
+    width: 408px;
+    height: 40px;
+    line-height: 2;
+    
+}
+.form-type button{
+    height: 48px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #000;
+}
+.form-text{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    
+
+}
+
+.inner-form-text{
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    color: #fff;
+    padding: 10px;
+    margin: 1px;
+    background-color: darkgray;
+}
+.inner-form-text input{
+    margin-left: auto;
+    cursor: pointer;
+
+}
+.last-formline{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.last-formline a{
+    text-decoration: none;
+}
