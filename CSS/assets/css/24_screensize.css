@@ -1,0 +1,482 @@
+@import url('./reset.css');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css');
+
+body {
+    font-family: "Sora", sans-serif;
+    font-size: 16px;
+    color: rgb(20, 12, 28);
+}
+
+p {
+    line-height: 1.4;
+}
+
+.contact-wrapper {
+    background-color: rgb(246, 243, 252);
+    padding: 60px 12px;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-info-row {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.contact-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-image: linear-gradient(161deg, rgb(42, 20, 84) 0%, rgb(135, 80, 247) 100%);
+    font-size: 20px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-label {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-label .info {
+    font-size: 18px;
+    font-weight: 500;
+    color: rgb(42, 20, 84);
+}
+
+.contact-label .info a {
+    color: rgb(42, 20, 84);
+    text-decoration: none;
+}
+
+.contact-label .info a:hover {
+    color: rgb(135, 80, 247);
+}
+
+.contact-form {
+    background-color: white;
+    border-radius: 15px;
+    padding: 30px 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+
+}
+
+.contact-form h2 {
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(135, 80, 247);
+    background-image: linear-gradient(to right, rgb(135, 80, 247) 0%, rgb(42, 20, 84) 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 1.1;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+select {
+    font-size: 16px;
+    border: 1px solid rgb(42, 20, 84);
+    border-radius: 8px;
+    padding: 14px 20px;
+    color: rgb(42, 20, 84);
+}
+
+input[type="submit"] {
+    padding: 20px 35px;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 50px;
+    background-image: linear-gradient(to right, rgb(135, 80, 247) 0%, rgb(42, 20, 84) 100%);
+    border: none;
+    width: 200px;
+}
+
+
+@media screen and (min-width:800px) {
+    .contact-inner {
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 50px;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .contact-info,
+    .contact-form {
+        display: flex;
+        flex-basis: 50%;
+    }
+
+}
+
+@media screen and (min-width:1000px) {
+    .contact-form form {
+        flex-direction: row;
+        flex-wrap: wrap;
+
+
+    }
+
+
+    .contact-form form input:nth-child(1),
+    .contact-form form input:nth-child(2),
+    .contact-form form input:nth-child(3),
+    .contact-form form input:nth-child(4) {
+        flex-basis: calc(50% - 5px);
+        box-sizing: border-box;
+        display: flex;
+        gap: 10px;
+
+    }
+
+    .contact-form form select,
+    .contact-form form textarea {
+        flex-basis: 100%;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .page-wrapper {
+        display: flex;
+        justify-content: center;
+    }
+
+    .page-inner {
+        max-width: 1200px;
+        width: 100%;
+    }
+}
+
+
+.header-inner {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+
+}
+
+.header-inner a {
+    color: #2A1454;
+    text-decoration: none;
+
+
+
+}
+
+
+.header-inner a:hover {
+    color: rgb(133, 79, 243);
+
+
+
+}
+
+
+.header-inner nav {
+    flex-grow: 2;
+}
+
+.header-wrapper {
+    padding: 15px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.header-inner nav ul {
+    display: flex;
+    justify-content: flex-end;
+    gap: 25px;
+}
+.header-inner nav ul a{
+    display: block;
+    padding: 15px 0;
+    position: relative;
+}
+
+.header-inner nav ul a span {
+    display: inline-block;
+    height: 2px;
+    width: 0;
+    margin-top: 3px;
+    background-image: linear-gradient(to right, rgb(135, 80 , 247) 0%, rgb(42, 20, 84)100%);
+    position: absolute;
+    bottom:10px;
+    left: 0;
+     transform-origin:left ;
+    transform: scaleX(0);
+    transition:transform 0.3s ease-in-out, -webkit ;
+}
+.header
+
+.header-inner img {
+    width: 60px;
+    height: 60px;
+}
+
+
+.header-btn{
+    display: inline-block;
+    background-image:linear-gradient(to right, rgb(135, 80 , 247) 0%, rgb(42, 20, 84)100%) ;
+    color: white;
+    padding: 17px 35px;
+    border-radius: 50px;
+}
+.header-btn:hover {
+    color: white;
+    background-image:linear-gradient(to right, rgb(135, 80 , 247) 0%, rgb(42, 20, 84)100%) ;
+
+
+}
+.hamburger-menu{
+    display: none;
+}
+
+@media screen and (max-width:990px) {
+    
+    .header-inner nav{
+
+        /* display: none; */
+        position: absolute;
+        background-color: rgb(42, 20, 80);
+        height: 0px;
+        top: 94px;
+
+    }
+    .hamburger-menu{
+        display: block;
+        border: none;
+        background-color: none;
+        font-size: 30px;
+        color: rgb(135, 80 , 247);
+        padding: 15px;
+
+    }
+
+    .header-mail{
+        flex-grow: 2;
+    }
+   
+
+    
+}
+
+
+/* about me */
+.outterbox_aboutme{
+    background-color:  rgb(245, 243, 252);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.inside_aboutme{
+    padding-left: 100px ;
+}
+.inside_aboutme{
+    display: grid;
+    grid-template-columns: 300px 200px;
+    gap: 300px; 
+    
+}
+ p{
+    line-height: 30px;
+   font-size: large;
+   font-weight: lighter;
+}
+
+.img{
+    rotate: 5deg;
+    width: 3px;
+
+}
+inside_aboutme > h2{
+    color:rgb(42, 20, 84);
+    line-height: 20px;
+}
+h1{
+    background-color: linear-gradient(to right, rgb(135, 80, 247) 0%, rgb(42, 20, 84) 100%);
+    color: rgb(135, 80, 247);
+}
+
+
+.pesonal_accounts {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    box-sizing: border-box;
+    width: 100px;
+
+}
+.pesonal_accounts{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    padding: 5px;
+}
+.experince{
+    display:flex;
+    flex-direction: row;
+   gap: 100px;
+   justify-content: center;
+   padding-bottom: 200px;
+     
+}
+.insidediv{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    color:rgb(135, 80, 247) ;
+}
+.insidediv > p{
+    box-sizing: border-box;
+    width: 80px;
+    font-size: larger;
+    padding-top: 30px;
+
+}
+.insidediv > h2{
+    font-size:60px;
+}
+
+
+
+
+/* end of about me  */
+
+.abilities{
+    padding: 100px;
+}
+
+.ability1{
+    display: flex;
+    flex-direction: row;
+    gap: 200px;
+
+}
+
+
+.ability2{
+    display: flex;
+    flex-direction: row;
+    gap: 260px;
+}
+.ability3{
+    display: flex;
+    flex-direction: row;
+    gap: 240px;
+}
+.ability4{
+    display: flex;
+    flex-direction: row;
+    gap: 200px;
+    
+}
+p2{
+    width: 450px;
+    font-size: 18px;
+    padding-top: 10px;
+}
+
+
+.ability > h2{
+    color:rgb(135, 80, 247) ;
+}
+
+}
+.p5{
+    color: rgb(135, 80, 247);
+}
+.ability1 > h2 , .ability2 > h2 , .ability3 > h2 , .ability4 > h2
+{
+    font-size: 30px;
+    
+   
+
+}
+
+/* 3rd part start */
+
+
+.3rd_part_intro_menu {
+    display:flex;
+    flex
+
+
+
+}
+.photos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap:50px ;
+    
+    border-radius: 20px;
+}
+
+
+
+
+/* my exprience */
+
+.outer-area{
+    padding-top: 100px;
+}
+
+body{
+    background-color: rgb(245, 243, 252);
+    font-family: "Sora";
+}
+.part1{
+    display: flex;
+    flex-direction: row;
+    padding-left: 300px;
+    gap: 300px;
+}
+
+.part2{
+    display: grid;
+     grid-template-rows: 30px 30px 30px;
+    grid-template-columns: 400px 400px ;
+    padding-left: 100px;
+    gap: 130px;
+    line-height: 10px;
+
+    
+}
+.box{
+    box-sizing: border-box;
+    background-color: white;
+    width: 500px;
+    height: 100px;
+    padding-left: 20px;
+    border-radius: 20px;
+    padding-top: 20px;
+    line-height: 10px;
+
+}
+.box > h3{
+    color: rgb(112, 66, 207);
+}
+
+

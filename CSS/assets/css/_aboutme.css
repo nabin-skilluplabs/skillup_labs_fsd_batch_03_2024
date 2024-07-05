@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css');
+
+.outterbox_aboutme{
+    background-color:  rgb(245, 243, 252);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.inside_aboutme{
+    padding-left: 100px ;
+}
+.inside_aboutme{
+    display: grid;
+    grid-template-columns: 300px 200px;
+    gap: 300px; 
+    
+}
+ p{
+    line-height: 30px;
+   font-size: large;
+   font-weight: lighter;
+}
+
+.img{
+    rotate: 5deg;
+    width: 3px;
+
+}
+inside_aboutme > h2{
+    color:rgb(42, 20, 84);
+    line-height: 20px;
+}
+h1{
+    background-color: linear-gradient(to right, rgb(135, 80, 247) 0%, rgb(42, 20, 84) 100%);
+    color: rgb(135, 80, 247);
+}
+
+
+.pesonal_accounts {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    box-sizing: border-box;
+    width: 100px;
+
+}
+.pesonal_accounts{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    padding: 5px;
+}
+.experince{
+    display:flex;
+    flex-direction: row;
+   gap: 100px;
+   justify-content: center;
+   padding-bottom: 200px;
+     
+}
+.insidediv{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    color:rgb(135, 80, 247) ;
+}
+.insidediv > p{
+    box-sizing: border-box;
+    width: 80px;
+    font-size: larger;
+    padding-top: 30px;
+
+}
+.insidediv > h2{
+    font-size:60px;
+}
+
+
+
+
+/* end of about me  */
+
+.abilities{
+    padding: 100px;
+}
+
+.ability1{
+    display: flex;
+    flex-direction: row;
+    gap: 200px;
+
+}
+
+
+.ability2{
+    display: flex;
+    flex-direction: row;
+    gap: 260px;
+}
+.ability3{
+    display: flex;
+    flex-direction: row;
+    gap: 240px;
+}
+.ability4{
+    display: flex;
+    flex-direction: row;
+    gap: 200px;
+    
+}
+p2{
+    width: 450px;
+    font-size: 18px;
+    padding-top: 10px;
+}
+
+
+.ability > h2{
+    color:rgb(135, 80, 247) ;
+}
+
+}
+.p5{
+    color: rgb(135, 80, 247);
+}
+.ability1 > h2 , .ability2 > h2 , .ability3 > h2 , .ability4 > h2
+{
+    font-size: 30px;
+    
+   
+
+}
+
+/* 3rd part start */
+
+
+.3rd_part_intro_menu {
+    display:flex;
+    flex
+
+
+
+}
+.photos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap:50px ;
+    
+    border-radius: 20px;
+}
