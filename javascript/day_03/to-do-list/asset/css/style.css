@@ -1,0 +1,40 @@
+.main_wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+
+
+h1{
+    font-size: 20;
+}
+
+.form_wrapper{
+    display: block;
+    text-align: left;
+    
+   
+}
+
+.input_wrapper{
+
+}
+
+.input_wrapper > input{
+   
+    padding: 17px 85px 17px 10px;
+    border: solid 1px black;
+    line-height: 1.7;
+    text-align: start;
+    font-size: 18px;
+
+}
+.input_wrapper > button{
+    padding: 20px 5px;
+    color: white;
+    background-color: black;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
