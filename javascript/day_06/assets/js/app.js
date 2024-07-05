@@ -62,9 +62,7 @@ function toggleView() {
     const textContent = document.querySelector("#view_all").textContent;
     if(textContent === 'View All') {
         populateToDoItems(toDoItems);
-        if(toDoItems.length > 5) {
-            document.querySelector("#view_all").textContent = "View Less";
-        }
+        document.querySelector("#view_all").textContent = "View Less";
     }
     else {
         populateToDoItems(toDoItems.slice(0,5));
