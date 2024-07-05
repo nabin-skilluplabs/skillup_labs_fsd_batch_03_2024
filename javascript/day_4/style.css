@@ -4,7 +4,7 @@ body{
     justify-content: center;
     align-items: center;
 
-    height: 100vh;
+    height: 100%;
     font-size: 20px;
 }
 .outer-body{
@@ -64,6 +64,7 @@ body{
 
 .inner-form-text{
     display: flex;
+    width: auto;
     flex-direction: row;
     color: #fff;
     padding: 10px;
@@ -75,6 +76,8 @@ body{
     cursor: pointer;
 }
 .inner-form-text input{
+    display: flex;
+    flex-direction: row;
     margin-left: auto;
     cursor: pointer;
 
@@ -83,6 +86,11 @@ body{
     display: flex;
     flex-direction: row-reverse;
 }
-.last-formline a{
+.last-formline button{
     text-decoration: none;
+    width: auto;
+    height: auto;
+    font-size: 24px;
+    cursor: pointer;
 }
+
