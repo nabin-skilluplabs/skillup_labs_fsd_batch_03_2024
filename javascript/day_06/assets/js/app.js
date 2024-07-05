@@ -4,20 +4,33 @@ function addEventListener() {
 const toDoItems = [];
 function handleAddNew(event) {
     event.preventDefault();
-
-    const todoItem =  document.querySelector('input').value;
-    toDoItems.push(todoItem);
-    populateToDoItems(toDoItems);
-    console.log({todoItem, toDoItems});
+    const inputItem = document.querySelector('input');
+    const todoItem =  inputItem.value;
+    if(todoItem !== "") {
+        toDoItems.unshift(todoItem);
+        populateToDoItems(toDoItems);
+        inputItem.value = "";
+        console.log({todoItem, toDoItems});
+    }
 }
 
 function populateToDoItems(toDoItems) {
     let list  = '';
     for(value of toDoItems) {
-        list += `<div><span>${value}</span> <input type="checkbox" ></div>`;
+        list += `<div><span>${value}</span> <input  type="checkbox" ></div>`;
     }
     document.querySelector(".list").innerHTML = list;
+    const allCheckboxes = document.querySelectorAll("input[type='checkbox']");
+    allCheckboxes.forEach((checkbox, index) => {
+        checkbox.addEventListener('click', (event) => removeToDoItem(event,index));
+    });
     document.querySelector("#total").innerHTML = toDoItems.length;
+}
+
+function removeToDoItem(event, index) {
+    if(event.target.checked) {
+        console.log({index})
+    }
 }
 
 addEventListener();
