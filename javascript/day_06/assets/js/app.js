@@ -1,5 +1,6 @@
 function addEventListener() {
     document.querySelector("#addBtn").addEventListener("click", handleAddNew);
+    document.querySelector("#view_all").addEventListener("click", toggleView);
 }
 const toDoItems = [];
 function handleAddNew(event) {
@@ -8,8 +9,20 @@ function handleAddNew(event) {
     const todoItem =  inputItem.value;
     if(todoItem !== "") {
         toDoItems.unshift(todoItem);
-        populateToDoItems(toDoItems);
+        populateToDoItems(toDoItems.slice(0, 5));
+        showTotalCount();
         inputItem.value = "";
+
+        const bodyElement = document.querySelector("body");
+        const bodyHeight = window.innerHeight;
+        const wrapperHeight = document.querySelector(".wrapper").offsetHeight;
+        console.log({wrapperHeight,bodyHeight });
+        if(wrapperHeight > bodyHeight) {
+            bodyElement.classList.add("fix-todo-center");
+        }
+        else {
+            bodyElement.classList.remove("fix-todo-center");
+        }
         console.log({todoItem, toDoItems});
     }
 }
@@ -24,13 +37,40 @@ function populateToDoItems(toDoItems) {
     allCheckboxes.forEach((checkbox, index) => {
         checkbox.addEventListener('click', (event) => removeToDoItem(event,index));
     });
+   
+}
+
+function showTotalCount() {
     document.querySelector("#total").innerHTML = toDoItems.length;
 }
 
 function removeToDoItem(event, index) {
     if(event.target.checked) {
-        console.log({index})
+        toDoItems.splice(index, 1);
+        const textContent = document.querySelector("#view_all").textContent;
+        if(textContent === 'View All') {
+            populateToDoItems(toDoItems.slice(0, 5));
+        }
+        else {
+            populateToDoItems(toDoItems);
+        }
+        showTotalCount();
     }
 }
+
+function toggleView() {
+    const textContent = document.querySelector("#view_all").textContent;
+    if(textContent === 'View All') {
+        populateToDoItems(toDoItems);
+        if(toDoItems.length > 5) {
+            document.querySelector("#view_all").textContent = "View Less";
+        }
+    }
+    else {
+        populateToDoItems(toDoItems.slice(0,5));
+        document.querySelector("#view_all").textContent = "View All";
+    }
+}
+
 
 addEventListener();
