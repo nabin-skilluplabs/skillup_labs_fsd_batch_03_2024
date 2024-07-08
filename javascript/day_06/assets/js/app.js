@@ -48,7 +48,7 @@ function removeToDoItem(event , index) {
         else {
             populateToDoItems(toDoItems);
         }
-        showTotalCount
+        showTotalCount();
 
         console.log({index})
 
