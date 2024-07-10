@@ -37,8 +37,7 @@ h2 {
 
 }
 .fix-todo {
-    
-
+ height: 100%;
 }
 .courses {
     
@@ -48,6 +47,7 @@ h2 {
     color: black;
     padding: 10px;
     margin-top: 10px;
+    
     
     
     

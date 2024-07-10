@@ -1,5 +1,8 @@
 function addEventListener() {
      document.querySelector('#addBtn').addEventListener('click', handleAddNew);
+     document.querySelector('#view_all').addEventListener('click', toggleView);
+     
+     
 }
 const toDoItems = [];
 function handleAddNew(event) {
@@ -7,16 +10,23 @@ function handleAddNew(event) {
 
     const todoItem = document.querySelector('input').value;
     const inputItem = document.querySelector('input').value= '';
-    
-
-
     if(todoItem !== '') {
     toDoItems.unshift(todoItem);
-    populateToDoItems(toDoItems);
+    populateToDoItems(toDoItems.slice(0, 5));
+    showTotal();
     inputItem.value = '';
    console.log({todoItem, toDoItems});
    const bodyElement = document.querySelector('body');
-   const bodyHeight = 
+   const bodyHeight = window.innerHeight;
+   const wrapperHeight = document.querySelector('.wrapper').offsetHeight;
+   console.log({wrapperHeight, bodyHeight});
+   if(wrapperHeight > bodyHeight) {
+    bodyElement.classList.add('fix-todo');
+   }
+   else {
+    bodyElement.classList.remove('fix-todo');
+   }
+   console.log({todoItem, toDoItems});
     
     }
   
@@ -35,14 +45,40 @@ function populateToDoItems(toDoItems) {
     allCheckboxes.forEach((checkbox, index) => {
         checkbox.addEventListener('click', (event) => removeToDoItem(event, index));
     });
+    
+}
+function showTotal() {
     document.querySelector("#total").innerHTML = toDoItems.length;
 }
 function removeToDoItem(event, index) {
-z
-    if(event.target.checked){
+    if(event.target.checked) {
         toDoItems.splice(index, 1);
-        populateToDoItems(toDoItems);
+        const textContent = document.querySelector('view_all').textContent;
+        if(textContent === 'View All') {
+            populateToDoItems(toDoItems.slice(0, 5));
+        }
+        else {
+            populateToDoItems(toDoItems);
+        }
+        showTotal();
+        
 
     }
 }
+
+function toggleView() {
+    const textContent = document.querySelector('#view_all').textContent;
+    if(textContent === 'View All') {
+      populateToDoItems(toDoItems);
+      if(toDoItems.length > 5) {
+         document.querySelector('#view_all').textContent = 'View Less';
+    }
+ }
+    else {
+        populateToDoItems(toDoItems.slice(0, 5));
+        document.querySelector('#view_all').textContent = 'View All';
+    }
+
+}
+
 addEventListener();
