@@ -1,0 +1,13 @@
+TASK
+Create an email template as per the design.
+Assets are attached.
+
+black: #000
+yellow: #fdcf00
+font-size: 16px
+title - font-size: 24px
+download: font-size: 21px
+Spacing: 28px
+Max-width: 600px
+Table
+Inline CSS
