@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Enrollment Form</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script defer src="./app.js"></script>
+</head>
+<body>
+
+    
+
+    <section>
+            <h2>Student Enrollment Form</h2>
+
+            <form>
+                <h3>Personal Information</h3>
+
+                <div class="form-row">
+                    <div class="form-item">
+                        <label>Full Name<span>*</span></label>
+                        <input type="text" name="fullName" id="fullName">
+                        <span id="fullName_error" class="error"></span>
+                    </div>
+                    <div class="form-item">
+                        <label>Email<span>*</span></label>
+                        <input type="email" name="email" id="email">
+                        <span id="email_error" class="error"></span>
+                    </div>
+                </div>
+
+                <div class="form-item">
+                    <label>Mobile<span>*</span></label>
+                    <input type="text" name="mobile" id="mobile">
+                    <span id="mobile_error" class="error"></span>
+                </div>
+
+                <div class="form-item">
+                    <label>Address</label>
+                    <textarea name="address" id="address"></textarea>
+                    
+                </div>
+
+                <h3>Academic Information</h3>
+
+                <div class="form-row">
+                    <div class="form-item">
+                        <label>Education</label>
+                        <select id="education" name="education">
+                            <option value="Masters">Masters</option>
+                            <option value="Bachelors">Bachelors</option>
+                            <option value="Diploma">Diploma</option>
+                            <option value="High School">High School</option>
+                            
+                        </select>
+                        
+
+
+                        
+                    </div>
+                    <div class="form-item">
+                        <label>College/University<span>*</span></label>
+                        <input type="text" name="college" id="college">
+                        <span id="college_error" class="error"></span>
+                    </div>
+                </div>
+
+                <h3>Course Information</h3>
+
+                <div class="form-item">
+                    <label>Course<span>*</span></label>
+                   <select id="course" name="course">
+                    <option value="">--Select Course--</option>
+                    <option value="Full Stack development">Full Stack development</option>
+                    <option value="QA and Software testing">QA and Software testing</option>
+                    
+                   </select>
+                   <span id="course_error" class="error"></span>
+                </div>
+
+                <div class="form-row">
+
+                    <div class="form-item">
+                       <label>Enrolment Date</label>
+                       <input type="text" name="enrollmentDate" id="enrollmentDate">
+                       
+                    </div>
+                    <div class="form-item">
+                       <label>ClassTime<span>*</span></label>
+                       <input type="text" name="ClassTime" id="ClassTime">
+                       <span id="ClassTime_error" class="error"></span>
+
+                       
+                    </div>
+                </div>
+
+                <div class="form-item">
+                    <label>Course Fee</label>
+                    <input type="text" name="courseFee" id="courseFee">
+                    
+                </div>
+
+                <input type="submit" value="Enrol now">
+                <input type="reset" value="Cancel">
+            
+
+                
+            </div>
+
+            </form>
+    </section>
+
+</body>
+</html>
