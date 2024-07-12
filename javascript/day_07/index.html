@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Enrollment Form</title>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <script defer src="./assets/js/app.js"></script>
+</head>
+<body>
+
+    <section>
+            <h2>Student Enrollment Form</h2>
+
+            <form>
+                <h3>Personal Information</h3>
+
+                <div class="form-row">
+                    <div class="form-item">
+                        <label>Full Name<span>*</span></label>
+                        <input type="text" name="fullName" id="fullName">
+                        <span id="fullName_error" class="error"></span>
+                    </div>
+                    <div class="form-item">
+                        <label>Email<span>*</span></label>
+                        <input type="email" name="email" id="email">
+                        <span id="email_error" class="error"></span>
+                    </div>
+                </div>
+
+                <div class="form-item">
+                    <label>Mobile<span>*</span></label>
+                    <input type="text" name="mobile" id="mobile">
+                    <span id="mobile_error" class="error"></span>
+                </div>
+
+                <div class="form-item">
+                    <label>Address</label>
+                    <textarea name="address" id="address"></textarea>
+                </div>
+
+
+                <h3>Academic Information</h3>
+                <div class="form-row">
+                    <div class="form-item">
+                        <label>Education<span>*</span></label>
+                        <select name="education" id="education">
+                            <option value="Masters">Masters</option>
+                            <option value="Bachelors">Bachelors</option>
+                            <option value="Diploma">Diploma</option>
+                            <option value="High school">High school</option>
+                        </select>
+                        <span id="education_error" class="error"></span>
+                    </div>
+                    <div class="form-item">
+                        <label>College/University<span>*</span></label>
+                        <input type="text" name="collegeUniversity" id="collegeUniversity">
+                        <span id="collegeUniversity_error" class="error"></span>
+                    </div>
+                </div>
+
+                <h3>Course Information</h3>
+                <div class="form-item">
+                    <label>Course<span>*</span></label>
+                    <select id="course" name="course">
+                        <option value="">--Select course--</option>
+                        <option value="Full stack development">Full stack development</option>
+                        <option value="QA & Software Testing">QA & Software Testing</option>
+                    </select>
+                    <span id="course_error" class="error"></span>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-item">
+                        <label>Enrolment Date<span>*</span></label>
+                        <input type="date" name="enrollmentDate" id="enrollmentDate">
+                        <span id="enrollmentDate_error" class="error"></span>
+                    </div>
+                    <div class="form-item">
+                        <label>Class Time Table<span>*</span></label>
+                        <input type="text" name="classTimeTable" id="classTimeTable">
+                        <span id="classTimeTable_error" class="error"></span>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-item">
+                        <label>Course Fee</label>
+                        <input type="text" name="courseFee" id="courseFee">
+                    </div>
+                </div>
+
+                <div>
+                    <input type="submit" value="Enroll Now">
+                    <input type="reset" value="Cancel">
+                </div>
+
+            </form>
+    </section>
+
+</body>
+</html>
