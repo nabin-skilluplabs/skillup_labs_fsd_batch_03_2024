@@ -87,13 +87,6 @@
 
         }
 
-
-
-
-
-
-
-
         if(isFormValid){
             form.reset();
         }
