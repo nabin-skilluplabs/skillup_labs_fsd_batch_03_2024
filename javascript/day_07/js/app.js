@@ -86,10 +86,19 @@
             document.querySelector('#timeTable_error').textContent = "";
 
         }
+        if(!courseFee) {
+            isFormValid = false;
+            document.querySelector('#timeTable_error').textContent = "timeTable is required!";
+
+        }
+
+
 
         if(isFormValid){
             form.reset();
         }
+
+
     }
 
 
