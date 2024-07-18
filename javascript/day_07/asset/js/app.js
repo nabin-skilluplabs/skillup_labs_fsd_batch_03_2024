@@ -80,7 +80,9 @@
         }
 
         if(isFormValid){
+            //handle your form to the server here
             form.reset();
+        
         }
         
     }
