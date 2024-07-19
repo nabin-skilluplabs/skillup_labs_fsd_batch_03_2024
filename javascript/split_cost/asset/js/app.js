@@ -19,12 +19,13 @@ function SplitCostApp() {
 
   this.displayUnsettledAmount = function () {
     document.querySelector(".amount").textContent = `$${this.unsettledAmount}`;
-  }
+  };
 
   this.addUser = function (name, email, mobile, photo) {
     const user = new User(name, email, mobile, photo);
     this.users.push(user);
-  }
+    this.displayUsers();
+  };
 
   this.displayUsers = function () {
     let userElements = "";
@@ -32,7 +33,7 @@ function SplitCostApp() {
       userElements += `<div><img src="${user.photo}" alt="${user.name}"/></div>`;
     }
     document.querySelector(".users-wrapper").innerHTML = userElements;
-  }
+  };
 
   this.addExpenses = function (event) {
     event.preventDefault();
@@ -47,7 +48,7 @@ function SplitCostApp() {
       this.calculateUnsettledAmount();
       this.displayUnsettledAmount();
     }
-  }
+  };
 
   this.calculateUnsettledAmount = function () {
     let total = 0;
@@ -56,9 +57,9 @@ function SplitCostApp() {
         total = total + Number(expense.amount);
       }
     }
-    const unsettledAmount = total / this.users.length;
+    const unsettledAmount = total / this.users.length ;
     this.unsettledAmount = unsettledAmount.toFixed(2);
-  }
+  };
 
   this.displayExpenses = function () {
     let expenseElements = "";
@@ -70,27 +71,42 @@ function SplitCostApp() {
             </div> <div class="date">"${expense.date}" </div></div>`;
     }
     document.querySelector(".expenses-wrapper").innerHTML = expenseElements;
-  }
+  };
 
   this.addNewEventListener = function () {
     document.querySelector("form").addEventListener("submit", (event) => {
       this.addExpenses(event);
     });
-  }
-this.addSettleNowEventListener = function(){
-    document.querySelector("#settleNowBtn").addEventListener('click', (event) => {
+  };
+  this.addSettleNowEventListener = function () {
+    document
+      .querySelector("#settleNowBtn")
+      .addEventListener("click", (event) => {
         this.settleNow(event);
-    })
-}
-this.settleNow = function(event){
-   this.expenses = this.expenses.map(expense =>{
-    return {...expense, isSettled: true};
-   });
-   this.displayExpenses();
-   this.calculateUnsettledAmount();
-   this.displayUnsettledAmount();
-}
+      });
+  };
+  this.settleNow = function (event) {
+    this.expenses = this.expenses.map((expense) => {
+      return { ...expense, isSettled: true };
+    });
+    this.displayExpenses();
+    this.calculateUnsettledAmount();
+    this.displayUnsettledAmount();
+  };
 
+  this.addNewUserEventListener = function () {
+    document.getElementById("addNewUser").addEventListener("click", () => {
+      const randomValue = parseInt(Math.random() * 100);
+      this.addUser(
+        "jethalaal",
+        "jethalaal@goley.com",
+        "04567890283",
+        `https://randomuser.me/api/portraits/women/${randomValue}.jpg`
+      );
+      this.calculateUnsettledAmount();
+      this.displayUnsettledAmount();
+    })
+  };
 }
 
 const splitCostApp = new SplitCostApp();
@@ -99,8 +115,8 @@ splitCostApp.addNewEventListener();
 splitCostApp.addSettleNowEventListener();
 splitCostApp.displayUnsettledAmount();
 splitCostApp.addUser(
-  "chinki",
-  "chinki@goley.com",
+  "jethalaal",
+  "jethalaal@goley.com",
   "04567890283",
   "https://randomuser.me/api/portraits/men/90.jpg"
 );
@@ -124,3 +140,4 @@ splitCostApp.addUser(
 );
 
 splitCostApp.displayUsers();
+splitCostApp.addNewUserEventListener();
