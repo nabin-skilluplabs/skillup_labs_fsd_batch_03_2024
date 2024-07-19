@@ -11,15 +11,44 @@
     <div class="outer-wrapper">
         <h1>Gallary</h1>
         <div class="inner-wrapper">
-            <img src="./assets/images/1-pic.jpg" alt="#">
-            <img src="../css/assets/images/2-pic.jpg" alt="#">
-            <img src="./assets/images/3-pic.jpg" alt="#">
-            <img src="./assets/images/4-pic.jpg" alt="#">
-            <img src="./assets/images/5-pic.jpg" alt="#">
-            <img src="./assets/images/6-pic.jpg" alt="#">
 
         </div>
 
     </div>
+    <script>
+        const gallaryImages = [
+            "1-pic.jpg",
+            "2-pic.jpg",
+            "3-pic.jpg",
+            "4-pic.jpg",
+            "5-pic.jpg",
+            "6-pic.jpg"
+        ]
+        function Image(url) {
+            this.url = url;
+        } 
+        function Gallary(){
+            this.images = [];
+
+            this.addImage = function(url){
+                const image = new Image(url);
+                this.images.push(image);
+                this.displayImages();
+            }
+
+            this.displayImages = function(){
+                let imagesElements = '';
+                for(let image of this.images){
+                    imagesElements += `<img src="./assets/images/${image.url}" alt="">`
+                }
+                document.querySelector('.inner-wrapper').innerHTML = imagesElements;
+            }
+        }
+        let gallary = new Gallary();
+        for(let image of gallaryImages){
+            gallary.addImage(image);
+        }
+
+    </script>
 </body>
 </html>
