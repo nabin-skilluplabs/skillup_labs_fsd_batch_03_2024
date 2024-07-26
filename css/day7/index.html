@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style.css">
+    <title>Student Enrollment Form</title>
+    <script src="./assets/sef.js" defer></script>
+</head>
+<body>
+    <section >
+        <h2>Student Enrollment Form</h2>
+        <form action="" method="post">
+            <h3> Personal Information</h3>
+            <div class="form-row">
+                <div class="form-item">
+                    <label for="Full Name">Full Name<span>*</span></label>
+                    <input type="text" name="fullName" id="fullName">
+                    <span id="nameError" class="error"></span>
+                </div>
+                <div class="form-item">
+                    <label for="email">Email Address<span>*</span></label>
+                    <input type="email" name="email" id="email">
+                    <span id="emailError" class="error"></span>
+                </div>
+            </div>
+            <div class="form-item">
+                <label for="mobile">Mobile<span>*</span></label>
+                <input type="text" name="mobile" id="mobile" >
+                <span id="mobileError" class="error"></span>
+            </div>
+            <div class="form-item">
+                <label for="address">Residential Address</label>
+                <textarea name="address" id="address" cols="30" rows="3"></textarea>
+            </div>
+            <h3> Academic Information</h3>
+            <div class="form-row">
+                <div class="form-item">
+                    <label for="">Education<span>*</span></label>
+                    <select name="education" id="education">
+                        <option value="">--Select Education--</option>
+                        <option value="Bachelor">Bachelor's Degree</option>
+                        <option value="Master">Master's Degree</option>
+                        <option value="Diploma">Diploma</option>
+                        <option value="School">High School</option>
+                    </select>
+                    <span id="eduError" class="error"></span>
+                </div>
+                <div class="form-item">
+                    <label for="institute">College/University<span>*</span></label>
+                    <input type="text" name="institute" id="institute">
+                    <span id="uniError" class="error"></span>
+                </div>
+            </div>
+            <h3>Course Information</h3>
+            <div class="form-item">
+                <label for="course">Course<span>*</span></label>
+                <select name="course" id="course">
+                    <option value="">--Select Course--</option>
+                    <option value="FSD">Full Stack Development</option>
+                    <option value="ST">Software Testing</option>
+                </select>
+                <span id="courseError" class="error"></span>
+            </div>
+            <div class="form-row">
+                <div class="form-item">
+                    <label for="ED">Enrollment Date<span>*</span></label>
+                    <input type="date" name="enrollmentDate" id="enrollmentDate">
+                    <span id="dateError" class="error"></span>
+                </div>
+                <div class="form-item">
+                    <label for="timeTable">Class Time Table</label>
+                    <input type="text" name="timeTable" id="timeTable">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-item">
+                    <label for="Fee">Course Fee</label>
+                    <input type="text" name="fee" id="fee">
+                </div>
+            </div>
+            <div class="submission">
+                <button type="submit" class="submit">Enroll Now</button>
+                <button type="reset" class="reset">Cancel</button>
+            </div>
+            
+        </form>
+    </section>
+    
+</body>
+</html>
