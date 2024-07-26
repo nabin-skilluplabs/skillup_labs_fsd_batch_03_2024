@@ -30,16 +30,13 @@ const intervalid = setInterval(function() {
 
 }, 1000)
 
-const reverse = setInterval(function(){
+setInterval(function(){
     const now = new Date();
     const hour = now.getHours();
     const mins = now.getMinutes();
     const secs = now.getSeconds();
     const ampm = (hour < 12) ? 'AM' : 'PM';
     document.querySelector("#digital-clock").textContent =` ${hour}:${mins}:${secs}${ampm}`;
-    if(setInterval = new Date){
-        countdown(reverse);
-    }
 
 }, 1000)
 
