@@ -50,7 +50,7 @@ function handleByAsyncAwait(){
         setTimeout(function(){
             console.log(2);
             resolve();
-        }, 100);
+        }, 0);
     });
 }
 (async ()=>{
